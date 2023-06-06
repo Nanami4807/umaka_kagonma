@@ -16,3 +16,15 @@ button{
 .rgb-gray img{
     border-radius: 10px;
 }
+.home_img{
+    width: 300px;
+    
+}
+
+span{
+    
+    background: #2633a7; /*背景色*/
+    padding: 0.2em;/*文字周りの余白*/
+    color: white;/*文字を白に*/
+    border-radius: 0.5em;/*角の丸み*/
+}
