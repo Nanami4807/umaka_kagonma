@@ -7,7 +7,7 @@
                 
                 <div class="text-center">
                     <br>
-                    <h1> <span class="mt-5">　探す　</span></h1>
+                    <h1 class="mt-5">　探す　</h1>
                     <div class="rgb-gray text-center">
                         
 
@@ -17,7 +17,9 @@
 
                             <div class="col-md-6">
                                 <div class="position-relative"> 
-                                    <img class="w-75" src="../image/tiku.jpg">
+                                    <div class="img_wrap">
+                                        <img class="w-75" src="../image/tiku.jpg">
+                                    </div>
                                         <div class="position-absolute text-white" style="top:30%; left:42%;">
                                             
                                             <button type="button" class="btn btn-primary mt-5 ">view more</button>
@@ -36,7 +38,7 @@
                                     <img class="w-75" src="../image/Category.jpg">
                                     <div class="position-absolute text-white" style="top:30%; left:35%;">
                                         
-                                        <button type="button" class="btn btn-primary mt-5 w-100" @click="$router.push('/Category')">view more</button>
+                                        <button type="button" class="btn btn-primary mt-5" @click="$router.push('/Category')">view more</button>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +54,6 @@
                             </div>
                             
                             <div style="height:300px;">
-
                             </div>
 
                         </div>
