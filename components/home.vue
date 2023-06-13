@@ -4,51 +4,62 @@
         
             <img class="w-100" src="../image/sakurajima.jpg">
             <div class="background">
-                <div class="container">
+                
                 <div class="text-center">
                     <br>
                     <h1> <span class="mt-5">　探す　</span></h1>
-                    <div class="rgb-gray text-center mt-5">
+                    <div class="rgb-gray text-center">
                         
-                        <div class="position-relative">
-                            <img class="home_img" src="../image/tiku.png">
-                                <div class="position-absolute text-white" style="top:30%; left:42%;">
-                                    <p style="font-size:1.5em;">地区から探す</p>
-                                    <button type="button" class="btn btn-primary mt-5 ">view more</button>
-                                </div>
-                        </div>
-                        <br>
 
                         <div class="row">
-                            <div class="col-6">
-                            <div class="position-relative">
-                                <img class="home_img" src="../image/Category.png">
-                                <div class="position-absolute text-white" style="top:30%; left:35%;">
-                                    <p style="font-size:1.5em;">カテゴリから探す</p>
-                                    <button type="button" class="btn btn-primary mt-5 ">view more</button>
+                            <div class="col-md-3">
                             </div>
-                            </div>
-                        </div>
 
-                        <div class="col-6">
-                        <div class="position-relative">
-                            <img class="home_img" src="../image/osusume.png">
-                            <div class="position-absolute text-white" style="top:30%; left:35%;">
-                                <p style="font-size:1.5em;">オススメ</p>
-                                <button type="button" class="btn btn-primary mt-5 ">view more</button>
+                            <div class="col-md-6">
+                                <div class="position-relative"> 
+                                    <img class="w-75" src="../image/tiku.jpg">
+                                        <div class="position-absolute text-white" style="top:30%; left:42%;">
+                                            
+                                            <button type="button" class="btn btn-primary mt-5 ">view more</button>
+                                        </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div style="height:300px;">
 
-                        </div>
+                            <div class="col-md-3">
+                            </div>
+
+                            <br>
+
+                            
+                            <div class="col-md-6 mt-5">
+                                <div class="position-relative">
+                                    <img class="w-75" src="../image/Category.jpg">
+                                    <div class="position-absolute text-white" style="top:30%; left:35%;">
+                                        
+                                        <button type="button" class="btn btn-primary mt-5 w-100" @click="$router.push('/Category')">view more</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 mt-5">
+                                <div class="position-relative">
+                                    <img class="w-75" src="../image/osusume.jpg">
+                                    <div class="position-absolute text-white" style="top:30%; left:35%;">
+                                        
+                                        <button type="button" class="btn btn-primary mt-5 ">view more</button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div style="height:300px;">
+
+                            </div>
 
                         </div>
                     </div>
                 </div>
+            
             </div>
-        </div>
     </div>
 </template>
 

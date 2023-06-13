@@ -1,3 +1,4 @@
+
 button{
     width: 150px;
     border-radius: 24px;
@@ -16,12 +17,8 @@ button{
 .rgb-gray img{
     border-radius: 10px;
 }
-.home_img{
-    width: 300px;
-    
-}
 
-span{
+h1 > span{
     
     background: #2633a7; /*背景色*/
     padding: 0.2em;/*文字周りの余白*/
