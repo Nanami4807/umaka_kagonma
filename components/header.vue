@@ -1,19 +1,18 @@
 <template>
-    <div>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <div class=" bg-indigo">
         <div class="container">
             <div class="row">
                 <div class="col-3">
-                    <img  class="w-75" src="../image/logo_triming.png">
+                    <button class="border-0 w-100 bg-blue rounded-0" @click="$router.push('/')"><img class="w-75" src="../image/logo_triming.png"></button>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                    <h2>地区</h2>
+                    <button type="button" class="border-0 w-100  h-100 h4 bg-blue rounded-0 text-warning" @click="$router.push('/')">地区</button>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                    <h2>カテゴリ</h2>
+                    <button type="button" class="border-0 w-100  h-100 h4 bg-blue rounded-0 text-warning" @click="$router.push('/Category')">カテゴリ</button>
                 </div>
                 <div class="col-3 d-flex align-items-center">
-                    <h2>おすすめ</h2>
+                    <button type="button" class="border-0 w-100 h-100 h4 bg-blue rounded-0 text-warning" @click="$router.push('/Category')">おすすめ</button>
                 </div>
             </div>
         </div>
