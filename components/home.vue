@@ -16,12 +16,9 @@
 
                             <div class="col-md-6">
                                 <div class="position-relative"> 
-                                    <div class="img_wrap">
-                                        <img class="w-75" src="../image/tiku.jpg">
-                                    </div>
-                                        <div class="position-absolute text-white" style="top:30%; left:42%;">
-                                            
-                                            <button type="button" class="btn btn-primary mt-5 ">view more</button>
+                                    <img class="w-75" src="../image/tiku.jpg">
+                                        <div class="text-center">
+                                            <button type="button" class="btn btn-primary mt-1" @click="$router.push('/tiku')">view more</button>
                                         </div>
                                 </div>
                             </div>
@@ -44,9 +41,8 @@
                             <div class="col-md-6 mt-5">
                                 <div class="position-relative">
                                     <img class="w-75" src="../image/osusume.jpg">
-                                    <div class="position-absolute text-white" style="top:30%; left:35%;">
-                                        
-                                        <button type="button" class="btn btn-primary mt-5 ">view more</button>
+                                    <div class="text-center">
+                                        <button type="button" class="btn btn-primary mt-1" @click="$router.push('/Category')">view more</button>
                                     </div>
                                 </div>
                             </div>
