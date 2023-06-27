@@ -22,6 +22,7 @@ button{
     border-radius: 10px;
 }
 
+/*見出しの装飾*/
 h1 {
     position: relative;
     display: inline-block;
@@ -45,7 +46,16 @@ h1 {
   h1:after {
     right: 0;
   }
+
+
+  .bg-indigo{
+    background-color: #0D142E;
+  }
+  .bg-blue{
+    background-color:#2A324F;
+  }
   
+  /*hoverで透過*/
 .img_wrap{
     margin: 0 auto;
     overflow: hidden;
@@ -60,9 +70,6 @@ h1 {
     transition-duration: 0.3s;
   }
 
-.bg-indigo{
-  background-color: #0D142E;
-}
-.bg-blue{
-  background-color:#2A324F;
+.asp16-9{
+  aspect-ratio: 16/9;
 }

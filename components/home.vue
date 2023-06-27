@@ -42,7 +42,7 @@
                                 <div class="position-relative">
                                     <img class="w-75" src="../image/osusume.jpg">
                                     <div class="text-center">
-                                        <button type="button" class="btn btn-primary mt-1" @click="$router.push('/Category')">view more</button>
+                                        <button type="button" class="btn btn-primary mt-1" @click="$router.push('/osusume')">view more</button>
                                     </div>
                                 </div>
                             </div>
