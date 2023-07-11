@@ -1,7 +1,7 @@
 <template>
     <div class="background">
-        <div class="container text-center">
-            <h1>いっぱい食べたい人におすすめ！</h1>
+        <div class="container text-center animate__animated animate__fadeIn">
+            <h1>テストテキスト</h1>
             <div class="bg-muted">
 
 
@@ -11,7 +11,7 @@
                             <img class="asp16-9 w-100" src="../image/noimage.png">
                         </td>
                         <td>
-                            <h2>天文館</h2>
+                            <h2>テストテキスト</h2>
                             <p>テストテキスト</p>
                         </td>
                     </tr>

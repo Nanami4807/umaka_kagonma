@@ -1,6 +1,7 @@
 <template>
     <div>
-        
+
+
             <img class="w-100" src="../image/sakurajima.jpg">
             <div class="background">
                 
@@ -14,7 +15,7 @@
                             <div class="col-md-3">
                             </div>
 
-                            <div class="col-md-6">
+                            <div data-aos="fade-up" class="col-md-6">
                                 <div class="position-relative"> 
                                     <img class="w-75" src="../image/tiku.jpg">
                                         <div class="text-center">
@@ -29,8 +30,8 @@
                             <br>
 
                             
-                            <div class="col-md-6 mt-5">
-                                <div class="position-relative">
+                            <div data-aos="fade-up" class="col-md-6 mt-5">
+                                <div  class="position-relative">
                                     <img class="w-75" src="../image/Category.jpg">
                                     <div class="text-center" >
                                         <button type="button" class="btn btn-primary mt-1" @click="$router.push('/Category')">view more</button>
@@ -38,7 +39,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-6 mt-5">
+                            <div data-aos="fade-up" class="col-md-6 mt-5">
                                 <div class="position-relative">
                                     <img class="w-75" src="../image/osusume.jpg">
                                     <div class="text-center">
@@ -60,6 +61,12 @@
 
 <script>
     export default{
+        mounted(){
+            AOS.init();
+        },
+        beforeDestroy(){
+            AOS.init();
+        },
         name: 'Home'
     }
     

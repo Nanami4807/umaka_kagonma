@@ -1,6 +1,6 @@
 <template>
 <div class="background">
-    <div class="container">
+    <div class="container animate__animated animate__fadeIn">
         <div class="row text-center">
             <div class="col-md-6">
                 <img class="w-75" src="../image/tiku_tizu.png" alt="地図">

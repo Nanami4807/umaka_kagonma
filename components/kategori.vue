@@ -1,6 +1,6 @@
 <template>
     <div class="background">
-        <div class="text-center">
+        <div class="text-center  animate__animated animate__fadeIn">
             <h1 class="mt-5">カテゴリ</h1>
             <div class="rgb-gray">
                 <div class="row">
