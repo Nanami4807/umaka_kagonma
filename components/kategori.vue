@@ -1,7 +1,7 @@
 <template>
     <div class="background">
         <div class="text-center">
-            <h1 class="mt-5">カテゴリ</h1>
+            <h1>カテゴリ</h1>
             <div class="rgb-gray">
                 <div class="row">
                     <div class="col-md-6 mt-5">

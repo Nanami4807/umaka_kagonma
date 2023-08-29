@@ -2,6 +2,7 @@
 <div class="background">
     <div class="container">
         <div class="row text-center">
+            <span><h1>地区</h1></span>
             <div class="col-md-6">
                 <img class="w-75" src="../image/tiku_tizu.png" alt="地図">
             </div>

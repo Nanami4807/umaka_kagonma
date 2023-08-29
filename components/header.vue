@@ -1,6 +1,6 @@
 <template>
-    <div class=" bg-indigo">
-        <div class="container">
+    <div class="bg-indigo">
+        <div class="container ">
             <div class="row">
                 <div class="col-3">
                     <button class="border-0 w-100 bg-blue rounded-0" @click="$router.push('/')"><img class="w-75" src="../image/logo_triming.png"></button>

@@ -27,6 +27,7 @@ h1 {
     position: relative;
     display: inline-block;
     padding: 0 55px;
+    margin-top:20px;
   }
   
   h1:before, h1:after {
@@ -53,6 +54,9 @@ h1 {
   }
   .bg-blue{
     background-color:#2A324F;
+  }
+  .bg-gray{
+    background-color: #f1f0ea;
   }
   
   /*hoverで透過*/
