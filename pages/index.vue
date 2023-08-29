@@ -9,8 +9,9 @@ import Header from '../components/header.vue';
 import Home from '../components/home.vue';
 
 export default {
-  components: {
-    Header,Home
-  }
+  components:
+    {
+      Header,Home
+    }
 }
 </script>

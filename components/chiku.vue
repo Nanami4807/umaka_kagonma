@@ -1,6 +1,6 @@
 <template>
 <div class="background">
-    <div class="container">
+    <div class="container animate__animated animate__fadeIn">
         <div class="row text-center">
             <span><h1>地区</h1></span>
             <div class="col-md-6">

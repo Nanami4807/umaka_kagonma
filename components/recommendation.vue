@@ -1,7 +1,7 @@
 <template>
     <div class="background">
         <div class="container text-center">
-            <h1>オススメ</h1>
+            <h1>いっぱい食べたい人におすすめ！</h1>
             <div class="bg-muted">
 
 
