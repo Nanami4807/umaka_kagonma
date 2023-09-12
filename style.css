@@ -58,21 +58,11 @@ h1 {
   .bg-gray{
     background-color: #f1f0ea;
   }
-  
-  /*hoverで透過*/
-.img_wrap{
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  .img_wrap img{
-    width: 100%;
-    cursor: pointer;
-    transition-duration: 0.3s;
-  }
-  .img_wrap:hover img{
-    opacity: 0.6;
-    transition-duration: 0.3s;
-  }
+
+.hov:hover{
+  opacity:0.5;
+	transition:0.3s;
+}
 
 .asp16-9{
   aspect-ratio: 16/9;

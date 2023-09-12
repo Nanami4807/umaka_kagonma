@@ -17,10 +17,9 @@
 
                             <div data-aos="fade-up" class="col-md-6">
                                 <div class="position-relative"> 
-                                    <img class="w-75" src="../image/tiku.jpg">
-                                        <div class="text-center">
-                                            <button type="button" class="btn btn-primary mt-1" @click="$router.push('/tiku')">view more</button>
-                                        </div>
+                                    <NuxtLink to="/tiku">
+                                        <img class="w-75 mt-5 hov" src="../image/tiku.jpg">
+                                    </NuxtLink>
                                 </div>
                             </div>
 
@@ -32,22 +31,21 @@
                             
                             <div data-aos="fade-up" class="col-md-6 mt-5">
                                 <div  class="position-relative">
-                                    <img class="w-75" src="../image/Category.jpg">
-                                    <div class="text-center" >
-                                        <button type="button" class="btn btn-primary mt-1" @click="$router.push('/Category')">view more</button>
-                                    </div>
+                                    <NuxtLink to="/Category">
+                                        <img class="w-75 hov" src="../image/Category.jpg">
+                                    </NuxtLink>
                                 </div>
                             </div>
 
                             <div data-aos="fade-up" class="col-md-6 mt-5">
                                 <div class="position-relative">
-                                    <img class="w-75" src="../image/osusume.jpg">
-                                    <div class="text-center">
-                                        <button type="button" class="btn btn-primary mt-1" @click="$router.push('/osusume')">view more</button>
-                                    </div>
+                                    <NuxtLink to="/osusume">
+                                        <img class="w-75 hov" src="../image/osusume.jpg">
+                                    </NuxtLink>
+                                    
                                 </div>
                             </div>
-                            
+
                             <div style="height:300px;">
                             </div>
 
