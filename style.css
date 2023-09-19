@@ -22,6 +22,7 @@ button{
     border-radius: 10px;
 }
 
+
 /*見出しの装飾*/
 h1 {
     position: relative;
@@ -67,75 +68,6 @@ h1 {
 .asp16-9{
   aspect-ratio: 16/9;
 }
-
-.loading-005 {
-  width: 100vw;
-  height: 100vh;
-  transition: all 1s;
-  background-color:#FFFFFF;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loading-005 span {
-  display: inline-block;
-  color: #2589d0;
-  font-weight: 600;
-  font-size: 1.5em;
-  animation: animation-loading-005 1s infinite;
-}
-
-.loading-005 span:nth-of-type(2) {
-  animation-delay: .1s;
-}
-
-.loading-005 span:nth-of-type(3) {
-  animation-delay: .2s;
-}
-
-.loading-005 span:nth-of-type(4) {
-  animation-delay: .3s;
-}
-
-.loading-005 span:nth-of-type(5) {
-  animation-delay: .4s;
-}
-
-.loading-005 span:nth-of-type(6) {
-  animation-delay: .5s;
-}
-
-.loading-005 span:nth-of-type(7) {
-  animation-delay: .6s;
-}
-
-.loading-005 span:nth-of-type(8) {
-  animation-delay: .7s;
-}
-
-.loading-005 span:nth-of-type(9) {
-  animation-delay: .8s;
-}
-
-.loading-005 span:nth-of-type(10) {
-  animation-delay: .9s;
-}
-
-@keyframes animation-loading-005 {
-  50% {
-      transform: translateY(10px);
-  }
-}
-.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
 }

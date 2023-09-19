@@ -9,10 +9,10 @@
 
             <div class="col-md-6">
                 <div class="align-items-center">
-                    <p><button type="button" class="btn btn-danger mt-3 text-dark w-75" @click="$router.push('/')">中央地区</button></p>
-                    <p><button type="button" class="btn btn-danger mt-3 text-dark w-75" @click="$router.push('/')">谷山地区</button></p>
-                    <p><button type="button" class="btn btn-danger mt-3 text-dark w-75" @click="$router.push('/')">松元地区</button></p>
-                    <p><button type="button" class="btn btn-danger mt-3 text-dark w-75" @click="$router.push('/')">喜入地区</button></p>
+                    <p><button type="button" class="btn bg-blue mt-3 text-warning w-75" @click="$router.push('/')">中央地区</button></p>
+                    <p><button type="button" class="btn mt-3 bg-blue text-warning w-75" @click="$router.push('/')">谷山地区</button></p>
+                    <p><button type="button" class="btn bg-blue text-warning mt-3 w-75" @click="$router.push('/')">松元地区</button></p>
+                    <p><button type="button" class="btn bg-blue text-warning mt-3 w-75" @click="$router.push('/')">喜入地区</button></p>
                 </div>
             </div>
         </div>

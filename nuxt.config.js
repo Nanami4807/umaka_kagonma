@@ -15,7 +15,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     script: [
-      {src: 'https://unpkg.com/aos@next/dist/aos.js'}
+      {src: 'https://unpkg.com/aos@next/dist/aos.js'},
+      {src: 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js'}
       
     ],
     link: [
