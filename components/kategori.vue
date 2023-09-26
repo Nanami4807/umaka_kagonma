@@ -5,20 +5,20 @@
             <div class="rgb-gray">
                 <div class="row">
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75" src="../image/menrui.jpg"></p>
+                        <p><img class="w-75 radius-img" src="../image/menrui.jpg"></p>
                         <h1>麺類</h1>
                     </div>
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75" src="../image/donmono.jpg"></p>
+                        <p><img class="w-75 radius-img" src="../image/donmono.jpg"></p>
                         <h1>丼もの</h1>
                     </div>
 
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75" src="../image/sui-tu.jpg"></p>
+                        <p><img class="w-75 radius-img" src="../image/sui-tu.jpg"></p>
                         <h1>スイーツ</h1>
                     </div>
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75" src="../image/sonota.jpg"></p>
+                        <p><img class="w-75 radius-img" src="../image/sonota.jpg"></p>
                         <h1>その他</h1>
                     </div>
                 </div>
