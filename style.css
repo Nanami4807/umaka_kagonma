@@ -7,11 +7,15 @@ button{
     width: 150px;
     border-radius: 24px;
 }
+a{
+  color:black;
+}
 .background{
     width:100%;
     background-image: url("image/background.jpg");
     background-size:100% auto;
 }
+
 .rgb-gray{
     background-color: rgba(0,0,0,0.3);
     width:75%;
