@@ -1,7 +1,15 @@
 <template>
   <main class="main">
+
+    <style>
+      figure img{
+        width:75%;
+        height:75%;
+      }
+    </style>
+
     <div class="bg-indigo">
-        <div class="container ">
+        <div class="container">
             <div class="row">
                 <div class="col-3">
                     <button class="border-0 w-100 h-100 bg-blue rounded-0" @click="$router.push('/')"><picture><source srcset="../../image/logo_triming.png" media="(min-width: 500px)" type="image/png"><img class="w-75 change-img" src="../../image/logo.png"></picture></button>
@@ -23,8 +31,10 @@
 
     <div class="background">
       <div class="container">
-        <h1 class="title">{{ title }}</h1>
-        <div v-html="content"></div>
+        <div class="p-3">
+          <h1 class="title">{{ title }}</h1>
+          <div v-html="content"></div>
+        </div>
       </div>
     </div>
 
@@ -40,8 +50,6 @@
           <button class="border-0 w-100 h-100 bg-indigo rounded-0" @click="$router.push('/')"><img class="w-75 d-block mx-auto" src="../../image/logo_triming.png"></button>
         </div>
 
-        <div class="col-md-1"></div>
-
         <div class="col-md-2 d-flex align-items-center">
             <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/tiku')">地区</button>
         </div>
@@ -52,7 +60,9 @@
             <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/osusume')">おすすめ</button>
         </div>
 
-        <div class="col-md-1"></div>
+        <div class="col-md-2 d-flex align-items-center">
+            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/list')">記事一覧</button>
+        </div>
 
       </div>
     
@@ -72,7 +82,7 @@ export default {
     console.log(params.slug)
     console.log(`https://umaka.microcms.io/api/v1/blog/${params.slug}`)
     const { data } = await axios.get(
-      `https://umaka.microcms.io/api/v1/blogs/${params.slug}`,
+      `https://umaka.microcms.io/api/v1/blogs/${params.slug}/?limit=100`,
       {
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
@@ -80,6 +90,7 @@ export default {
     console.log(data)
     return data
   },
+
 
 }
 </script>

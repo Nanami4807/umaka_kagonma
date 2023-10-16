@@ -21,7 +21,7 @@
                 </div>
 
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-primary" @click="$router.push('/')">もっと見る</button>
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/')">もっと見る</button>
                 </div>
             </div>
 
@@ -45,8 +45,30 @@
                 </div>
 
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-primary" @click="$router.push('/')">もっと見る</button>
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/')">もっと見る</button>
                 </div>
+
+
+                <div class="col-md-6 my-auto">
+                    <h2>マザルバカフェ</h2>
+                    <p>おしゃれな雰囲気とこだわりのハンバーガーが人気！</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/mazaruba/mazaruba-1.jpg">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/mazaruba/mazaruba-2.jpg">
+                </div>
+                <div class="col-md-6">
+                    <iframe class="asp16-9 w-100"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6797.339879913044!2d130.4590953829601!3d31.588097799999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e68878b40c9ef%3A0x782e635e2ef1ba96!2z44Oe44K244Or44OQ44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1697425769213!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/n62i7y8s-v')">もっと見る</button>
+                </div>
+
+
             </div>
         </div>
     </div>
