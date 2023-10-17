@@ -27,6 +27,36 @@ export default {
     ]
   },
 
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        path: '/pages/list/:p',
+        component: resolve(__dirname, 'pages/list/list.vue'),
+        name: 'page',
+      })
+    },
+  },
+
+  generate: {
+    async routes() {
+      const limit = 25
+      const range = (start, end) =>
+        [...Array(end - start + 1)].map((_, i) => start + i)
+
+      // 一覧のページング
+      const pages = await axios
+        .get(`https://umaka.microcms.io/api/v1/blogs?limit=0`, {
+          headers: { 'X-MICROCMS-API-KEY': bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE },
+        })
+        .then((res) =>
+          range(1, Math.ceil(res.data.totalCount / limit)).map((p) => ({
+            route: `/page/${p}`,
+          }))
+        )
+      return pages
+    },
+  },
+
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     '../style.css'

@@ -1,14 +1,7 @@
 <template>
-  <main class="main">
+<div>
 
-    <style>
-      figure img{
-        width:75%;
-        height:75%;
-      }
-    </style>
-
-    <div class="bg-indigo">
+  <div class="bg-indigo">
         <div class="container">
             <div class="row">
                 <div class="col-3">
@@ -27,22 +20,22 @@
         </div>
     </div>
 
-
-
-    <div class="background">
-      <div class="container">
-        <div class="p-3">
-          <h1 class="title">{{ title }}</h1>
-          <div v-html="content"></div>
-        </div>
+  <div class="background">
+    <div class="container">
+      <div class="p-3">
+        <h1>お店一覧</h1>
+        <ul>
+          <li v-for="content in contents" :key="content.id">
+            <nuxt-link :to="`/${content.id}`">
+              {{ content.title }}
+            </nuxt-link>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
-
-
-
-
-    <footer class="bg-indigo">
+  <footer class="bg-indigo">
     
       <div class="row">
 
@@ -69,28 +62,34 @@
     <hr />
   </footer>
 
-
-  </main>
+</div>
 </template>
 
 <script>
-import axios from 'axios'
+import Header from '../../components/header.vue';
+import Footer from '../../components/footer.vue';
+import axios from 'axios';
 
 export default {
-  async asyncData({ params }) 
-  {
-    console.log(params.p)
-    //console.log(`https://umaka.microcms.io/api/v1/blog/${params.slug}`)
+  async asyncData({ params }) {
+    const page = params.p || '1'
+    const limit = 25
+    console.log(page)
+    console.log(limit)
+    console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}}`)
     const { data } = await axios.get(
-      `https://umaka.microcms.io/api/v1/blogs/${params.slug}`,
+      // your-service-id部分は自分のサービスidに置き換えてください
+      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}}`,
       {
+        // your-api-key部分は自分のapi-keyに置き換えてください
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
     )
-    console.log(data)
     return data
   },
 
-
+  components: {
+    Header,Footer
+  }
 }
 </script>

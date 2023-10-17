@@ -18,7 +18,7 @@
         </div>
 
         <div class="col-md-2 d-flex align-items-center">
-            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/list')">記事一覧</button>
+            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/pages/list/1')">記事一覧</button>
         </div>
 
       </div>
