@@ -33,6 +33,7 @@
       <div class="container">
         <div class="p-3">
           <h1 class="title">{{ title }}</h1>
+          <p class="category">{{ category && category.name }}</p>
           <div v-html="content"></div>
         </div>
       </div>
@@ -87,7 +88,7 @@ export default {
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
     )
-    console.log(data)
+    //console.log(data)
     return data
   },
 

@@ -27,6 +27,7 @@
         <ul>
           <li v-for="content in contents" :key="content.id">
             <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link>
+            <p>{{ content.eyecatch.url }}</p>
           </li>
         </ul>
       </div>
@@ -78,12 +79,13 @@ export default {
     console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}}`)
     const { data } = await axios.get(
       // your-service-id部分は自分のサービスidに置き換えてください
-      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
+      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}`,
       {
         // your-api-key部分は自分のapi-keyに置き換えてください
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
     )
+    console.log(data)
     return data
   },
 

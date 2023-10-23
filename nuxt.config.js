@@ -30,16 +30,11 @@ export default {
   router: {
     extendRoutes(routes, resolve) {
       routes.push({
-        path: '/pages/list/:p',
+        path: '/pages/list/:p',               //url(localhost:3000/pages/list/:p)
         component: resolve(__dirname, 'pages/list/list.vue'),
         name: 'page',
       });
 
-      routes.push({
-        path: '/category/:categoryId/page/:p',
-        component: resolve(__dirname, 'pages/index.vue'),
-        name: 'category',
-      })
     },
   },
 
@@ -59,32 +54,6 @@ export default {
               route: `/page/${p}`,
             }))
           )
-
-      const categories = await axios
-        .get(`https://umaka.microcms.io/api/v1/categories?fields=id`, {
-          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
-        })
-          .then(({ data }) => {
-            return data.contents.map((content) => content.id)
-          });
-
-      // カテゴリーページのページング
-      const categoryPages = await Promise.all(
-        categories.map((category) =>
-          axios.get(
-            `https://umaka.microcms.io/api/v1/blog?limit=0&filters=category[equals]${category}`,
-            { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
-          )
-            .then((res) =>
-              range(1, Math.ceil(res.data.totalCount / 10)).map((p) => ({
-                route: `/category/${category}/page/${p}`,
-              })))
-      )
-      )
-
-      // 2次元配列になってるのでフラットにする
-      const flattenCategoryPages = [].concat.apply([], categoryPages)
-      return [...pages, ...flattenCategoryPages]
     },
   },
 
