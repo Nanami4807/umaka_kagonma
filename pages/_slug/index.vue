@@ -88,7 +88,7 @@ export default {
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
     )
-    console.log(data)
+    //console.log(data)
     return data
   },
 

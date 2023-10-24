@@ -1,6 +1,13 @@
 <template>
 <div>
 
+  <style>
+    li img{
+      width:50%;
+    }
+    
+  </style>
+
   <div class="bg-indigo">
         <div class="container">
             <div class="row">
@@ -22,12 +29,12 @@
 
   <div class="background">
     <div class="container">
-      <div class="p-3">
+      <div>
         <h1>お店一覧</h1>
         <ul>
-          <li v-for="content in contents" :key="content.id">
-            <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link>
-            <p>{{ content.eyecatch.url }}</p>
+          <li class="pb-4" v-for="content in contents" :key="content.id">
+            <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
+            <img :src="content.eyecatch.url">
           </li>
         </ul>
       </div>
@@ -73,22 +80,20 @@ export default {
   async asyncData({ params }) {
     const page = params.p || '1'
     const categoryId = params.categoryId
-    const limit = 25
+    const limit = 10
     console.log(categoryId)
     console.log(page)
     console.log(limit)
-    console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}}`)
+    console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category.name[equals]${categoryId}`}&offset=${(page - 1) * limit}`)
     const { data } = await axios.get(
       // your-service-id部分は自分のサービスidに置き換えてください
-      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${
-        categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`
-      }&offset=${(page - 1) * limit}`,
+      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
       {
         // your-api-key部分は自分のapi-keyに置き換えてください
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
     )
-    //console.log(data)
+    console.log(data)
     return data
   },
 
