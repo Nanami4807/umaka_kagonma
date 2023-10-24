@@ -35,6 +35,12 @@ export default {
         name: 'page',
       });
 
+      routes.push({
+        path: '/category/:categoryId/pages/list/:p',
+        component: resolve(__dirname, 'pages/list/list.vue'),
+        name: 'category',
+      })
+
     },
   },
 
@@ -54,6 +60,32 @@ export default {
               route: `/page/${p}`,
             }))
           )
+
+        const categories = await axios
+        .get(`https://umaka.microcms.io/api/v1/categories?fields=id`, {
+          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
+        })
+          .then(({ data }) => {
+            return data.contents.map((content) => content.id)
+          });
+
+      // カテゴリーページのページング
+      const categoryPages = await Promise.all(
+        categories.map((category) =>
+          axios.get(
+            `https://umaka.microcms.io/api/v1/blogs?limit=0&filters=category[equals]${category}`,
+            { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
+          )
+            .then((res) =>
+              range(1, Math.ceil(res.data.totalCount / 10)).map((p) => ({
+                route: `/category/${category}/page/${p}`,
+              })))
+            )
+          )
+  
+      // 2次元配列になってるのでフラットにする
+      const flattenCategoryPages = [].concat.apply([], categoryPages)
+      return [...pages, ...flattenCategoryPages]
     },
   },
 

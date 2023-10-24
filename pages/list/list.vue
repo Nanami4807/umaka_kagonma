@@ -74,18 +74,21 @@ export default {
     const page = params.p || '1'
     const categoryId = params.categoryId
     const limit = 25
+    console.log(categoryId)
     console.log(page)
     console.log(limit)
     console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}}`)
     const { data } = await axios.get(
       // your-service-id部分は自分のサービスidに置き換えてください
-      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}&offset=${(page - 1) * limit}`,
+      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${
+        categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`
+      }&offset=${(page - 1) * limit}`,
       {
         // your-api-key部分は自分のapi-keyに置き換えてください
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
     )
-    console.log(data)
+    //console.log(data)
     return data
   },
 

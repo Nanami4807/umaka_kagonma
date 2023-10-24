@@ -40,7 +40,7 @@
                 <div class="col-md-6">
                     <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/kanojonoie/kanojonoie-2.png">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6">                
                     <iframe class="asp16-9 w-100"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.507151682567!2d130.55420707477367!3d31.592560443573355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e01a6ecc339%3A0x14953417576c7897!2z44Kr44OV44Kn5b285aWz44Gu5a62IOWkqeaWh-mkqOW6l--8iOaXpyDntI3lsYvlupfvvIk!5e0!3m2!1sja!2sjp!4v1695696555586!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
