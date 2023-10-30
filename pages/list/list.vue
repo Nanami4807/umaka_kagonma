@@ -3,7 +3,7 @@
 
   <style>
     li img{
-      width:50%;
+      width:75%;
     }
     
   </style>
@@ -29,15 +29,27 @@
 
   <div class="background">
     <div class="container">
-      <div>
-        <h1>お店一覧</h1>
-        <ul>
-          <li class="pb-4" v-for="content in contents" :key="content.id">
-            <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
-            <img :src="content.eyecatch.url">
-          </li>
-        </ul>
+      <div class="row">
+
+        <div class="col-md-2 col-sm-1"></div>
+        
+        <div class="col-md-8 col-sm-10 text-center">
+          <h1>お店一覧</h1>
+          <ul>
+            <li class="pb-4" v-for="content in contents" :key="content.id">
+              <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
+              <img class="radius-img" :src="content.eyecatch.url">
+            </li>
+          </ul>
+            <Pagination
+            :pager="pager"
+            :current="Number(page)"
+            :category="selectedCategory"
+            />
+        </div>
       </div>
+
+      <div class="col-md-2 col-sm-1"></div>
     </div>
   </div>
 
@@ -92,9 +104,26 @@ export default {
         // your-api-key部分は自分のapi-keyに置き換えてください
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
       }
-    )
+    );
+    const categories = await axios.get(
+      `https://umaka.microcms.io/api/v1/category?limit=100`,
+      {
+        headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
+      }
+    );
+    const selectedCategory =
+      categoryId !== undefined
+        ? categories.data.contents.find((content) => content.id === categoryId)
+        : undefined;
+
+
     console.log(data)
-    return data
+    return {
+      ...data,
+      selectedCategory,
+      page,
+      pager: [...Array(Math.ceil(data.totalCount / limit)).keys()],
+    };
   },
 
   components: {

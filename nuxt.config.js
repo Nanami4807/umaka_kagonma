@@ -36,7 +36,7 @@ export default {
       });
 
       routes.push({
-        path: '/category/:categoryId/pages/list/:p',
+        path: '/category/:categoryId/pages/list/:p',  //url例(http://localhost:3000/category/tyu-ou/pages/list/1)
         component: resolve(__dirname, 'pages/list/list.vue'),
         name: 'category',
       })
