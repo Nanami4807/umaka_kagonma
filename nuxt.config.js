@@ -41,6 +41,12 @@ export default {
         name: 'category',
       })
 
+      routes.push({
+        path: '/tiku/:tikuId/pages/list/:p',                    //こんな感じのURLが来たら
+        component: resolve(__dirname, 'pages/list/list.vue'),   //ここに表示する
+        name: 'tiku',
+      })
+
     },
   },
 
@@ -61,13 +67,21 @@ export default {
             }))
           )
 
-        const categories = await axios
-        .get(`https://umaka.microcms.io/api/v1/categories?fields=id`, {
-          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
-        })
-          .then(({ data }) => {
-            return data.contents.map((content) => content.id)
-          });
+      const categories = await axios
+      .get(`https://umaka.microcms.io/api/v1/category?fields=id`, {
+        headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
+      })
+        .then(({ data }) => {                                 //function(data){return data.contents.map(function(content){content.id}) ってこと？
+          return data.contents.map((content) => content.id)     
+        });
+
+      const chiku = await axios     //
+      .get(`https://umaka.microcms.io/api/v1/tiku?fields=id`, {
+        headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
+      })
+        .then(({ data }) => {
+          return data.contents.map((content) => content.id)     
+        });
 
       // カテゴリーページのページング
       const categoryPages = await Promise.all(
@@ -82,6 +96,20 @@ export default {
               })))
             )
           )
+
+        //地区ページのページング
+        const tikuPages = await Promise.all(
+          chiku.map((tiku) =>
+            axios.get(
+              `https://umaka.microcms.io/api/v1/blogs?limit=0&filters=category[equals]${category}`,
+              { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
+            )
+              .then((res) =>
+                range(1, Math.ceil(res.data.totalCount / 10)).map((p) => ({
+                  route: `/category/${category}/page/${p}`,
+                })))
+              )
+            )
   
       // 2次元配列になってるのでフラットにする
       const flattenCategoryPages = [].concat.apply([], categoryPages)
