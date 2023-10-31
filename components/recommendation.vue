@@ -23,6 +23,8 @@
                 <div class="col-12 text-center">
                     <button type="button" class="btn btn-primary mb-5" @click="$router.push('/')">もっと見る</button>
                 </div>
+
+                
             </div>
 
             
@@ -40,7 +42,7 @@
                 <div class="col-md-6">
                     <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/kanojonoie/kanojonoie-2.png">
                 </div>
-                <div class="col-md-6">                
+                <div class="col-md-6">
                     <iframe class="asp16-9 w-100"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.507151682567!2d130.55420707477367!3d31.592560443573355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e01a6ecc339%3A0x14953417576c7897!2z44Kr44OV44Kn5b285aWz44Gu5a62IOWkqeaWh-mkqOW6l--8iOaXpyDntI3lsYvlupfvvIk!5e0!3m2!1sja!2sjp!4v1695696555586!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
@@ -67,7 +69,25 @@
                 <div class="col-12 text-center">
                     <button type="button" class="btn btn-primary mb-5" @click="$router.push('/n62i7y8s-v')">もっと見る</button>
                 </div>
+                <div class="col-md-6 my-auto">
+                    <h2>天文館フェスティバロ</h2>
+                    <p>サツマイモを使ったスイーツがおすすめ</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/festibaro/festibaro-1.jpg">
+                </div>
 
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/festibaro/festibaro-2.jpg">
+                </div>
+                <div class="col-md-6">
+                   <iframe class="asp16-9 w-100 radius-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108839.13804143155!2d130.44817369915623!3d31.5180328812488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e01d537ac4b%3A0x60cec3dc9641f32e!2z5aSp5paH6aSo44OV44Kn44K544OG44Kj44OQ44Ot!5e0!3m2!1sja!2sjp!4v1698110947612!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/vmupmcm9g')">もっと見る</button>
+                </div>
+                
 
             </div>
         </div>
