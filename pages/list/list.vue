@@ -1,12 +1,8 @@
 <template>
 <div>
 
-  <style>
-    li img{
-      width:75%;
-    }
+  
     
-  </style>
 
   <div class="bg-indigo">
         <div class="container">
@@ -38,7 +34,7 @@
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
               <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
-              <img class="radius-img" :src="content.eyecatch.url">
+              <img class="radius-img w-75" :src="content.eyecatch.url">
             </li>
           </ul>
             <Pagination

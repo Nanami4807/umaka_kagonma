@@ -34,16 +34,18 @@ ul{
 }
 
 
-
+/*
 .page{
+  
+}
+*/
+
+.page a{
+  text-decoration: none;
   background-color: white;
   border-radius: 5px;
   padding :5px 10px;
   margin: 5px 10px;
-}
-
-.page a{
-  text-decoration: none;
 }
 
 /*見出しの装飾*/
@@ -93,4 +95,8 @@ h1 {
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
+}
+.nuxt-link-exact-active{
+  background-color: #2589d0!important;
+  color:white;
 }

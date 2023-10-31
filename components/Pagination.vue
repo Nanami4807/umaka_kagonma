@@ -3,7 +3,7 @@
     <ul class="pager">
       <li v-if="current > 1" class="page arrow">
         <nuxt-link :to="getPath(current - 1)">
-          <img class="w-100" src="../image/chevron-left.svg" alt="前のページへ" />
+          <img src="../image/chevron-left.svg" alt="前のページへ" />
         </nuxt-link>
       </li>
       <li v-if="3 < current" class="page">
@@ -35,7 +35,7 @@
       </li>
       <li v-if="current < pager.length" class="page arrow">
         <nuxt-link :to="getPath(current + 1)">
-          <img  class="w-100" src="../image/chevron-right.svg" alt="前のページへ" />
+          <img src="../image/chevron-right.svg" alt="前のページへ" />
         </nuxt-link>
       </li>
     </ul>
