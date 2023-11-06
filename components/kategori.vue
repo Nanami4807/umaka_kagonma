@@ -5,20 +5,28 @@
             <div class="rgb-gray">
                 <div class="row">
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75 radius-img" src="../image/menrui.jpg"></p>
+                        <NuxtLink to ="/category/noodles/pages/list/1">
+                            <img class="w-75 radius-img hov" src="../image/menrui.jpg">
+                        </NuxtLink>
                         <h1>麺類</h1>
                     </div>
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75 radius-img" src="../image/donmono.jpg"></p>
+                        <NuxtLink to ="/category/don/pages/list/1">
+                            <img class="w-75 radius-img hov" src="../image/donmono.jpg">
+                        </NuxtLink>
                         <h1>丼もの</h1>
                     </div>
 
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75 radius-img" src="../image/sui-tu.jpg"></p>
+                        <NuxtLink to ="/category/sweets/pages/list/1">
+                            <img class="w-75 radius-img hov" src="../image/sui-tu.jpg">
+                        </NuxtLink>
                         <h1>スイーツ</h1>
                     </div>
                     <div class="col-md-6 mt-5">
-                        <p><img class="w-75 radius-img" src="../image/sonota.jpg"></p>
+                        <NuxtLink to ="/category/other/pages/list/1">
+                            <img class="w-75 radius-img hov" src="../image/sonota.jpg">
+                        </NuxtLink>
                         <h1>その他</h1>
                     </div>
                 </div>
