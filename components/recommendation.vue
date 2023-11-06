@@ -42,7 +42,27 @@
                 <div class="col-12 text-center">
                     <button type="button" class="btn btn-primary mb-5" @click="$router.push('/1zmlom0lvf7')">もっと見る</button>
                 </div>
+                <div class="col-md-6 my-auto">
+                    <h2>やきにくホルモン じゃばら</h2>
+                    <p>安くてウマいが両立した良いお店</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/jabara/jabara-1.jpg">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/jabara/jabara-2.jpg">
+                </div>
+                <div class="col-md-6">
+                 <iframe class="asp16-9 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505.32065208422136!2d130.54945259739387!3d31.568664175783564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e67bfae3ad795%3A0xcf7e027578dd7025!2z44KE44GN44Gr44GP44Ob44Or44Oi44OzIOOBmOOCg-OBsOOCiQ!5e0!3m2!1sja!2sjp!4v1699237668154!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/8_th_t3thu')">もっと見る</button>
+                </div>
             </div>
+
+
 
             
             <h1>ゆっくりしたい時におすすめ！</h1>
@@ -140,6 +160,25 @@
 
                 <div class="col-12 text-center">
                     <button type="button" class="btn btn-primary mb-5" @click="$router.push('/y--28mjzj')">もっと見る</button>
+                </div>
+
+                <div class="col-md-6 my-auto">
+                    <h2>アプリコット</h2>
+                    <p>昔からあるケーキ屋さんですが、季節ごとに新作が次々登場するので飽きることがありません。</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/apurikotto/apurikotto-1.jpg">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/apurikotto/apurikotto-2.jpg">
+                </div>
+                <div class="col-md-6">
+                 <iframe   class="asp16-9 w-100"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d694.250560207953!2d130.54765705137046!3d31.573579129098615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e67360a48ffc3%3A0xca55360957f4430a!2z44Ki44OX44Oq44Kz44OD44OI!5e0!3m2!1sja!2sjp!4v1699234552152!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/wa4952ntssw4')">もっと見る</button>
                 </div>
 
             </div>
