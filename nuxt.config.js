@@ -84,8 +84,8 @@ export default {
         });
 
       // カテゴリーページのページング
-      const categoryPages = await Promise.all(
-        categories.map((category) =>
+      const categoryPages = await Promise.all(      //Promise.all（）内の全ての命令を並列に実行して，終わったら戻り値を返して，一つでも失敗すれば失敗した時点での戻り値を返す
+        categories.map((category) =>                //=> functionの代わり
           axios.get(
             `https://umaka.microcms.io/api/v1/blogs?limit=0&filters=category[equals]${category}`,
             { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
@@ -98,22 +98,24 @@ export default {
           )
 
         //地区ページのページング
-        const tikuPages = await Promise.all(
+        const tikuPages = await Promise.all(        //Promise「まだ完了していない（かもしれない）結果」を表す。完了後の処理をthen()メソッドの引数として与えることができる
           chiku.map((tiku) =>
-            axios.get(
-              `https://umaka.microcms.io/api/v1/blogs?limit=0&filters=category[equals]${category}`,
-              { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
-            )
-              .then((res) =>
-                range(1, Math.ceil(res.data.totalCount / 10)).map((p) => ({
-                  route: `/category/${category}/page/${p}`,
-                })))
-              )
+                    axios.get(
+                      `https://umaka.microcms.io/api/v1/blogs?limit=0&filters=tiku[equals]${tiku}`,
+                      { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
+                    )
+                      .then(
+                            (res) =>range(1, Math.ceil(res.data.totalCount / 10)).map((p) => ({route: `/tiku/${tiku}/page/${p}`,}))   //res?
+                          )
+                    )
             )
   
       // 2次元配列になってるのでフラットにする
       const flattenCategoryPages = [].concat.apply([], categoryPages)
       return [...pages, ...flattenCategoryPages]
+
+      const flattentikuPages = [].concat.apply([], tikuPages)
+      return [...pages, ...flattentikuPages]
     },
   },
 

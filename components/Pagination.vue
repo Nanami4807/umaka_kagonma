@@ -59,12 +59,15 @@ export default {
       required: false,
       default: undefined,
     },
+    tiku: {
+      type: Object,
+      required: false,
+      default: undefined,
+    },
   },
   methods: {
     getPath(p) {
-      return `/${
-        this.category !== undefined ? `category/${this.category.id}/` : ''
-      }pages/list/${p}`;
+      return `/${this.category !== undefined ? `category/${this.category.id}/` : this.tiku !== undefined ? `tiku/${this.tiku.id}/` : ''}pages/list/${p}`;
     },
   },
 };
