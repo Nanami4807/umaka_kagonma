@@ -21,10 +21,27 @@
                 </div>
 
                 <div class="col-12 text-center">
-                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/')">もっと見る</button>
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/ug6gazwxj9y')">もっと見る</button>
                 </div>
 
-                
+                <div class="col-md-6 my-auto">
+                    <h2>路のカフェ</h2>
+                    <p>オムライス、ドリア、ステーキなどの洋食がおしゃれな空間で食べられます</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/miticafe/miticafe-1.png">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/miticafe/miticafe-2.jpg">
+                </div>
+                <div class="col-md-6">
+                  <iframe class="asp16-9 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.5012965812366!2d130.55126427629548!3d31.5927209435627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e007325825d%3A0xb8bf3058e99815df!2z6Lev44Gu44Kr44OV44Kn!5e0!3m2!1sja!2sjp!4v1698114223814!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/1zmlom0lvf7')">もっと見る</button>
+                </div>
             </div>
 
             
@@ -81,13 +98,49 @@
                     <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/festibaro/festibaro-2.jpg">
                 </div>
                 <div class="col-md-6">
-                   <iframe class="asp16-9 w-100 radius-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108839.13804143155!2d130.44817369915623!3d31.5180328812488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e01d537ac4b%3A0x60cec3dc9641f32e!2z5aSp5paH6aSo44OV44Kn44K544OG44Kj44OQ44Ot!5e0!3m2!1sja!2sjp!4v1698110947612!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   <iframe class="asp16-9 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2020.8027734454658!2d130.55358677690324!3d31.590793293042722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5e01d537ac4b%3A0x60cec3dc9641f32e!2z5aSp5paH6aSo44OV44Kn44K544OG44Kj44OQ44Ot!5e0!3m2!1sja!2sjp!4v1698715502070!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <div class="col-12 text-center">
                     <button type="button" class="btn btn-primary mb-5" @click="$router.push('/vmupmcm9g')">もっと見る</button>
                 </div>
-                
+                 <div class="col-md-6 my-auto">
+                    <h2>天文館むじゃき本店</h2>
+                    <p>有名かき氷「しろくま」やっぱりおいしい</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/shirokuma/shirokuma-1.jpg">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/shirokuma/shirokuma-2.jpg">
+                </div>
+                <div class="col-md-6">
+                 <iframe class="asp16-9 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d849.6570874279114!2d130.55502170682288!3d31.589238000000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e60aa58af7d5b%3A0xe1ff875969c01c72!2z5aSp5paH6aSo44KA44GY44KD44GNIOacrOW6lw!5e0!3m2!1sja!2sjp!4v1698716035793!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/judku4zwf')">もっと見る</button>
+                </div>
+
+                <div class="col-md-6 my-auto">
+                    <h2>Andenken（アンデンケン）吉野店</h2>
+                    <p>スイーツとバウムクーヘン、ブッセ、焼き菓子が販売されており、作る様子が見られます。お土産でも、自家用としてもおすすめです。</p>
+                </div>
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/andenken/andenken-1.jpg">
+                </div>
+
+                <div class="col-md-6">
+                    <img class="asp16-9 w-100 px-auto radius-img" src="../ryouri_image/andenken/andenken-2.jpg">
+                </div>
+                <div class="col-md-6">
+                  <iframe class="asp16-9 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3396.4408294052814!2d130.567135076297!3d31.64915714076671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e5eb972695555%3A0xe8606d92f07cd9ff!2zQW5kZW5rZW7vvIjjgqLjg7Pjg4fjg7PjgrHjg7PvvInlkInph47lupc!5e0!3m2!1sja!2sjp!4v1698114508416!5m2!1sja!2sjp"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary mb-5" @click="$router.push('/y--28mjzj')">もっと見る</button>
+                </div>
 
             </div>
         </div>
