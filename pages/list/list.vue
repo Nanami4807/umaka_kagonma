@@ -88,19 +88,31 @@ export default {
   async asyncData({ params }) {
     const page = params.p || '1'
     const categoryId = params.categoryId
+    const tikuId = params.tikuId 
     const limit = 10
     console.log(categoryId)
     console.log(page)
     console.log(limit)
     console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category.name[equals]${categoryId}`}&offset=${(page - 1) * limit}`)
-    const { data } = await axios.get(
-      // your-service-id部分は自分のサービスidに置き換えてください
-      `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
-      {
-        // your-api-key部分は自分のapi-keyに置き換えてください
-        headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
-      }
-    );
+    if(categoryId != null){
+      var { data } = await axios.get(
+        // your-service-id部分は自分のサービスidに置き換えてください
+        `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
+        {
+          // your-api-key部分は自分のapi-keyに置き換えてください
+          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
+        }
+      );
+    }else{
+      var { data } = await axios.get(
+        // your-service-id部分は自分のサービスidに置き換えてください
+        `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=tiku[equals]${tikuId}`}&offset=${(page - 1) * limit}`,
+        {
+          // your-api-key部分は自分のapi-keyに置き換えてください
+          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
+        }
+      );
+    }
     const categories = await axios.get(
       `https://umaka.microcms.io/api/v1/category?limit=100`,
       {

@@ -34,11 +34,10 @@ ul{
 }
 
 
-/*
-.page{
-  
+.nuxt-link-exact-active{
+  background-color: #2589d0!important;
+  color:white;
 }
-*/
 
 .page a{
   text-decoration: none;
@@ -95,8 +94,4 @@ h1 {
 }
 .animate__animated.animate__fadeIn {
   --animate-duration: 1s;
-}
-.nuxt-link-exact-active{
-  background-color: #2589d0!important;
-  color:white;
 }
