@@ -41,6 +41,7 @@
             :pager="pager"
             :current="Number(page)"
             :category="selectedCategory"
+            :tiku="selectedtiku"
             />
         </div>
       </div>
@@ -95,6 +96,7 @@ export default {
     console.log(limit)
     console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category.name[equals]${categoryId}`}&offset=${(page - 1) * limit}`)
     if(categoryId != null){
+      console.log("category")
       var { data } = await axios.get(
         // your-service-id部分は自分のサービスidに置き換えてください
         `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
@@ -104,9 +106,10 @@ export default {
         }
       );
     }else{
+      console.log("tiku")
       var { data } = await axios.get(
         // your-service-id部分は自分のサービスidに置き換えてください
-        `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=tiku[equals]${tikuId}`}&offset=${(page - 1) * limit}`,
+        `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${tikuId === undefined ? '' : `&filters=tiku[equals]${tikuId}`}&offset=${(page - 1) * limit}`,
         {
           // your-api-key部分は自分のapi-keyに置き換えてください
           headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
@@ -118,17 +121,32 @@ export default {
       {
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
       }
+
+    
+    );
+
+    const chiku = await axios.get(
+      `https://umaka.microcms.io/api/v1/tiku?limit=100`,
+      {
+        headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
+      }
     );
     const selectedCategory =
       categoryId !== undefined
         ? categories.data.contents.find((content) => content.id === categoryId)
         : undefined;
 
+    const selectedtiku =
+      tikuId !== undefined
+        ? chiku.data.contents.find((content) => content.id === tikuId)
+        : undefined;
 
-    console.log(data)
+
+    //console.log(data)
     return {
       ...data,
       selectedCategory,
+      selectedtiku,
       page,
       pager: [...Array(Math.ceil(data.totalCount / limit)).keys()],
     };
