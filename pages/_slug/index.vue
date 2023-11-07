@@ -5,7 +5,8 @@
       figure img{
         width:75%;
         height:75%;
-      }
+        border-radius: 10px;
+              }
     </style>
 
     <div class="bg-indigo">
@@ -34,6 +35,7 @@
         <div class="p-3">
           <h1 class="title">{{ title }}</h1>
           <p class="category">{{ category && category.name }}</p>
+          <p class="tiku">{{ tiku && tiku.name }}</p>
           <div v-html="content"></div>
         </div>
       </div>

@@ -31,22 +31,31 @@
         
         <div class="col-md-8 col-sm-10 text-center">
           <h1>お店一覧</h1>
+          <!--<p>{{ selectedCategory.name !== undifined ? selectedCategory.name  :'' }}</p>-->
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
               <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
               <img class="radius-img w-75" :src="content.eyecatch.url">
             </li>
           </ul>
-            <Pagination
-            :pager="pager"
-            :current="Number(page)"
-            :category="selectedCategory"
-            :tiku="selectedtiku"
-            />
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+              <Pagination
+              :pager="pager"
+              :current="Number(page)"
+              :category="selectedCategory"
+              :tiku="selectedtiku"
+              />
+            </div>
+            <div class="col-md-2"></div>
+          </div>
         </div>
+
+        <div class="col-md-2 col-sm-1"></div>
       </div>
 
-      <div class="col-md-2 col-sm-1"></div>
+      
     </div>
   </div>
 
