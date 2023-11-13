@@ -18,7 +18,7 @@
                             <div data-aos="fade-up" class="col-md-6">
                                 <div class="position-relative"> 
                                     <NuxtLink to="/tiku">
-                                        <img class="w-75 mt-5 hov radius-img" src="../image/tiku2.jpg">
+                                        <img class="w-75 mt-5 hov radius-img" src="../image/tiku.jpg">
                                     </NuxtLink>
                                 </div>
                             </div>
@@ -32,7 +32,7 @@
                             <div data-aos="fade-up" class="col-md-6 mt-5">
                                 <div  class="position-relative">
                                     <NuxtLink to="/Category">
-                                        <img class="w-75 hov radius-img" src="../image/Category2.jpg">
+                                        <img class="w-75 hov radius-img" src="../image/Category.jpg">
                                     </NuxtLink>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@
                             <div data-aos="fade-up" class="col-md-6 mt-5">
                                 <div class="position-relative">
                                     <NuxtLink to="/osusume">
-                                        <img class="w-75 hov radius-img" src="../image/osusume2.jpg">
+                                        <img class="w-75 hov radius-img" src="../image/osusume.jpg">
                                     </NuxtLink>
                                     
                                 </div>
