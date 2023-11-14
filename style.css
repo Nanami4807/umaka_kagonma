@@ -3,6 +3,9 @@
 *{
   font-family: 'RocknRoll One', sans-serif;
 }
+html,body{
+  overflow-x: hidden;
+}
 button{
     width: 150px;
     border-radius: 24px;
