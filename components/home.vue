@@ -6,7 +6,7 @@
             <div class="background">
                 
                 <div class="text-center">
-                    <br>
+                    
                     <h1>　探す　</h1>
                     <div class="rgb-gray text-center">
                         
