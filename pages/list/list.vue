@@ -31,8 +31,13 @@
         
         <div class="col-md-8 col-sm-10 text-center">
           <h1>お店一覧</h1>
-          <p>{{ !!selectedCategory ? selectedCategory.name  :'' }}</p>
-          <p>{{ !!selectedtiku ? selectedtiku.name  :'' }}</p>
+          <div>
+            <p>検索したいキーワードを入力してください</p>
+            <input id="search_text" type="search" name="search" placeholder="キーワードを入力" v-model="searchText">
+            <input id="search_btn" type="button" name="submit" value="検索" @click="search">
+          </div>
+          <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
+          <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
               <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
@@ -91,20 +96,59 @@
 </template>
 
 <script>
+
+
 import Header from '../../components/header.vue';
 import Footer from '../../components/footer.vue';
 import axios from 'axios';
+//import func from 'vue-editor-bridge';
 
 export default {
+  data() {
+    return {
+      searchText: '',
+      searchResult: [],
+    }
+  },
+
+  mounted : function(){
+    // var s_btn = document.getElementById('search_btn')
+    // var s_text = document.getElementById('search_text')
+    // s_btn.addEventListener('click',function(){
+    //   console.log(s_text.value);
+    //   const s_value = s_text.value
+    //   this.search(s_value);
+    // })
+  },
+
+  methods: {
+      async search() {
+        const text = this.searchText;
+        var { data } = await axios.get(
+        // your-service-id部分は自分のサービスidに置き換えてください
+        `https://umaka.microcms.io/api/v1/blogs/?q=${text}}`,
+        {
+          // your-api-key部分は自分のapi-keyに置き換えてください
+          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
+        }
+      );
+      this.searchResult = data.contents
+      // return data
+      }
+  },
+
   async asyncData({ params }) {
     const page = params.p || '1'
     const categoryId = params.categoryId
     const tikuId = params.tikuId 
     const limit = 10
+
     console.log(categoryId)
     console.log(page)
     console.log(limit)
     console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category.name[equals]${categoryId}`}&offset=${(page - 1) * limit}`)
+    
+
     if(categoryId != null){
       console.log("category")
       var { data } = await axios.get(
@@ -160,6 +204,8 @@ export default {
       page,
       pager: [...Array(Math.ceil(data.totalCount / limit)).keys()],
     };
+
+    
   },
 
   components: {
