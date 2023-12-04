@@ -1,9 +1,6 @@
 <template>
 <div>
 
-  
-    
-
   <div class="bg-indigo">
         <div class="container">
             <div class="row">
@@ -34,14 +31,14 @@
           <div>
             <p>検索したいキーワードを入力してください</p>
             <input id="search_text" type="search" name="search" placeholder="キーワードを入力" v-model="searchText">
-            <input id="search_btn" type="button" name="submit" value="検索" @click="search">
+            <input id="search_btn" type="button" name="submit" value="検索" >
           </div>
           <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
-              <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link><br>
-              <img class="radius-img w-75" :src="content.eyecatch.url">
+              <nuxt-link :to="`/${content.id}`">{{ content.title }}<br>
+              <img class="radius-img w-75" :src="content.eyecatch.url"></nuxt-link>
             </li>
           </ul>
           <div class="row">
@@ -112,30 +109,17 @@ export default {
   },
 
   mounted : function(){
-    // var s_btn = document.getElementById('search_btn')
-    // var s_text = document.getElementById('search_text')
-    // s_btn.addEventListener('click',function(){
-    //   console.log(s_text.value);
-    //   const s_value = s_text.value
-    //   this.search(s_value);
-    // })
+    
+    var s_btn = document.getElementById('search_btn')
+    var s_text = document.getElementById('search_text')
+    s_btn.addEventListener('click',function(){
+      console.log(s_text.value);
+      const s_value = s_text.value
+      this.$router.push(`../index`);
+    })
+     
   },
 
-  methods: {
-      async search() {
-        const text = this.searchText;
-        var { data } = await axios.get(
-        // your-service-id部分は自分のサービスidに置き換えてください
-        `https://umaka.microcms.io/api/v1/blogs/?q=${text}}`,
-        {
-          // your-api-key部分は自分のapi-keyに置き換えてください
-          headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
-        }
-      );
-      this.searchResult = data.contents
-      // return data
-      }
-  },
 
   async asyncData({ params }) {
     const page = params.p || '1'
