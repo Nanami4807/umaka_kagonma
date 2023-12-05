@@ -1,6 +1,5 @@
 <template>
 <div>
-
   <div class="bg-indigo">
         <div class="container">
             <div class="row">
@@ -23,15 +22,13 @@
   <div class="background">
     <div class="container">
       <div class="row">
-
         <div class="col-md-2 col-sm-1"></div>
-        
         <div class="col-md-8 col-sm-10 text-center">
           <h1>お店一覧</h1>
           <div>
             <p>検索したいキーワードを入力してください</p>
             <input id="search_text" type="search" name="search" placeholder="キーワードを入力" v-model="searchText">
-            <input id="search_btn" type="button" name="submit" value="検索" >
+            <input id="search_btn" type="button" name="submit" value="検索" @click="search">
           </div>
           <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
@@ -54,11 +51,8 @@
             <div class="col-md-2"></div>
           </div>
         </div>
-
         <div class="col-md-2 col-sm-1"></div>
       </div>
-
-      
     </div>
   </div>
 
@@ -108,48 +102,31 @@ export default {
     }
   },
 
-  mounted : function(){
-    
-    var s_btn = document.getElementById('search_btn')
-    var s_text = document.getElementById('search_text')
-    s_btn.addEventListener('click',function(){
-      console.log(s_text.value);
-      const s_value = s_text.value
-      this.$router.push(`../index`);
-    })
-     
+  methods:{
+    search(){
+      let s_value = this.searchText
+      s_value = encodeURIComponent(s_value)
+      this.$router.push(`/search?id=${s_value}`);
+    }
   },
-
 
   async asyncData({ params }) {
     const page = params.p || '1'
     const categoryId = params.categoryId
     const tikuId = params.tikuId 
-    const limit = 10
-
-    console.log(categoryId)
-    console.log(page)
-    console.log(limit)
-    console.log(`https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category.name[equals]${categoryId}`}&offset=${(page - 1) * limit}`)
-    
+    const limit = 10    
 
     if(categoryId != null){
-      console.log("category")
       var { data } = await axios.get(
-        // your-service-id部分は自分のサービスidに置き換えてください
         `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
         {
-          // your-api-key部分は自分のapi-keyに置き換えてください
           headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
         }
       );
     }else{
-      console.log("tiku")
       var { data } = await axios.get(
-        // your-service-id部分は自分のサービスidに置き換えてください
         `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${tikuId === undefined ? '' : `&filters=tiku[equals]${tikuId}`}&offset=${(page - 1) * limit}`,
         {
-          // your-api-key部分は自分のapi-keyに置き換えてください
           headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
         }
       );
@@ -180,7 +157,6 @@ export default {
         : undefined;
 
 
-    //console.log(data)
     return {
       ...data,
       selectedCategory,

@@ -7,6 +7,7 @@
       <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link>
     </li>
   </ul>
+  
   <Footer />
 </div>
 </template>
@@ -22,10 +23,7 @@ export default {
   },
     
   async asyncData({ query }) {
-    var text
-    console.log(query.id)
-    console.log(`https://umaka.microcms.io/api/v1/blogs/?q=${text}`)
-    text = query.id
+    var text = query.id
     const { data } = await axios.get(
       `https://umaka.microcms.io/api/v1/blogs/?q=${text}`,
       { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
