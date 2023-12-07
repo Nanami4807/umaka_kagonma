@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Old+Mincho:wght@600&display=swap');
 
 *{
-  font-family: 'RocknRoll One', sans-serif;
+  font-family: 'Zen Old Mincho', serif;
 }
 html,body{
   overflow-x: hidden;
@@ -78,6 +79,10 @@ h1 {
   }
 
 
+  .bg-brown{
+    background-color: #35221E;
+  }
+
   .bg-indigo{
     background-color: #0D142E;
   }
@@ -96,6 +101,6 @@ h1 {
 .asp16-9{
   aspect-ratio: 16/9;
 }
-.animate__animated.animate__fadeIn {
-  --animate-duration: 1s;
+.border-right{
+  border-right: solid 2px #9c7c29;
 }
