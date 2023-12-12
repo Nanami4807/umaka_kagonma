@@ -2,17 +2,41 @@
 <div class="background">
     <div class="container animate__animated animate__fadeIn">
         <div class="row text-center">
-            <span><h1>地域</h1></span>
+            <div class="col-2">
+                <img class="w-75" src="../image/corner_leftup.png">
+            </div>
+            <div class="col-8"></div>
+            <div class="col-2">
+                <img class="w-75" src="../image/corner_rightup.png">
+            </div>
+            <div class="col-3"></div>
+            <div class="col-6">
+                <img class="w-100" src="../image/tiku_top.png">
+            </div>
+            <div class="col-3"></div>
+            
             <div class="col-md-6">
-                <img class="w-75" src="../image/tiku_tizu.png" alt="地図">
+                <img class="w-100 mb-5" src="../image/tiku_tizu.png" alt="地図">
             </div>
 
             <div class="col-md-6">
                 <div class="align-items-center">
-                    <p><button type="button" class="btn bg-blue mt-3 text-warning w-75" @click="$router.push('/tiku/tyu-ou/pages/list/1')">中央地域</button></p>
-                    <p><button type="button" class="btn mt-3 bg-blue text-warning w-75" @click="$router.push('/tiku/taniyama/pages/list/1')">谷山地域</button></p>
-                    <p><button type="button" class="btn bg-blue text-warning mt-3 w-75" @click="$router.push('/tiku/matumoto/pages/list/1')">松元地域</button></p>
+                    <img class="w-75" src="../image/line.png">
+                    <img class="w-50" src="../image/tiku_tyuou.png">
+                    <img class="w-75" src="../image/line.png">
+                    <img class="w-50" src="../image/tiku_taniyama.png">
+                    <img class="w-75" src="../image/line.png">
+                    <img class="w-50" src="../image/tiku_matumoto.png">
+                    <img class="w-75" src="../image/line.png">
                 </div>
+            </div>
+
+            <div class="col-2">
+                <img class="w-75" src="../image/corner_leftdown.png">
+            </div>
+            <div class="col-8"></div>
+            <div class="col-2">
+                <img class="w-75" src="../image/corner_rightdown.png">
             </div>
         </div>
     </div>

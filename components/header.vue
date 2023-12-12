@@ -1,11 +1,11 @@
 <template>
 <div>
-    <div id="header">
+    <div id="pc">
         <div class="bg-brown">
             <div class="container">
                 <div class="row">
-                    <div class="col-2">
-                        <img class="w-100" src="../image/flag.png">
+                    <div class="col-2 position-relative">
+                        <NuxtLink class="no_color  position-absolute" to="/"><img class="w-75" src="../image/flag.png"></NuxtLink>
                     </div>
 
                     <div class="col-10">
@@ -14,13 +14,13 @@
                                 <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/tiku')">地区</button>
                             </div>
                             <div class="col-3 d-flex align-items-center border-right my-4">
-                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/tiku')">カテゴリ</button>
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/Category')">カテゴリ</button>
                             </div>
                             <div class="col-3 d-flex align-items-center border-right my-4">
-                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/Category')">おすすめ</button>
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/osusume')">おすすめ</button>
                             </div>
                             <div class="col-3 d-flex align-items-center my-4 ">
-                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white" @click="$router.push('/osusume')">記事一覧</button>
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white" @click="$router.push('pages/list/1')">記事一覧</button>
                             </div>
                         </div>
                     </div>
@@ -29,10 +29,10 @@
         </div>
     </div>
     
-    <div id="hamburger" class="">
+    <div id="iphone" class="d-no">
         <header class="header bg-brown">
                 <div class="logo ">
-                    <br>
+                    <div class="my-5"></div>
                 </div>
                 <div class="nav">
     
