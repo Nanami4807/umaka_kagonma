@@ -1,29 +1,67 @@
 <template>
 <div>
-  <div class="bg-indigo">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <button class="border-0 w-100 h-100 bg-blue rounded-0" @click="$router.push('/')"><picture><source srcset="../../image/logo_triming.png" media="(min-width: 500px)" type="image/png"><img class="w-75 change-img" src="../../image/logo.png"></picture></button>
-                </div>
-                <div class="col-3 d-flex align-items-center">
-                    <button type="button" class="border-0 w-100  h-100 h-100 h4 bg-blue rounded-0 text-warning" @click="$router.push('/tiku')">地区</button>
-                </div>
-                <div class="col-3 d-flex align-items-center">
-                    <button type="button" class="border-0 w-100  h-100 h-100 h4 bg-blue rounded-0 text-warning" @click="$router.push('/Category')">カテゴリ</button>
-                </div>
-                <div class="col-3 d-flex align-items-center">
-                    <button type="button" class="border-0 w-100 h-100 h-100 h4 bg-blue rounded-0 text-warning" @click="$router.push('/osusume')">おすすめ</button>
+  <div id="pc">
+        <div class="bg-brown">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 position-relative">
+                        <NuxtLink class="no_color  position-absolute" to="/"><img class="w-75" src="../../image/flag.png"></NuxtLink>
+                    </div>
+
+                    <div class="col-10">
+                        <div class="row">
+                            <div class="col-3 d-flex align-items-center border-right my-4">
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/tiku')">地区</button>
+                            </div>
+                            <div class="col-3 d-flex align-items-center border-right my-4">
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/Category')">カテゴリ</button>
+                            </div>
+                            <div class="col-3 d-flex align-items-center border-right my-4">
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white " @click="$router.push('/osusume')">おすすめ</button>
+                            </div>
+                            <div class="col-3 d-flex align-items-center my-4 ">
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-white" @click="$router.push('pages/list/1')">記事一覧</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+    
+    <div id="iphone" class="d-no">
+        <header class="header bg-brown">
+                <div class="logo ">
+                    <div class="my-5"></div>
+                </div>
+                <div class="nav">
+    
+                    <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                    <input id="drawer_input" class="drawer_hidden" type="checkbox">
+            
+                    <!-- ハンバーガーアイコン -->
+                    <label for="drawer_input" class="drawer_open"><span></span></label>
+            
+                    <!-- メニュー -->
+                    <nav class="nav_content">
+                    <ul class="nav_list">
+                            <li class="nav_item"><NuxtLink to="/">TOP</NuxtLink></li>
+                            <li class="nav_item"><NuxtLink to="/tiku">地区</NuxtLink></li>
+                            <li class="nav_item"><NuxtLink to="/Category">カテゴリ</NuxtLink></li>
+                        <li class="nav_item"><NuxtLink to="/osusume">オススメ</NuxtLink></li>
+                    <li class="nav_item"><NuxtLink to="pages/list/1">記事一覧</NuxtLink></li>
+                    </ul>
+                    </nav>
+    
+                </div>
+        </header>
     </div>
 
   <div class="background">
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-1"></div>
-        <div class="col-md-8 col-sm-10 text-center">
+        <div class="col-md-8 col-sm-10 text-center text-white">
           <h1>お店一覧</h1>
           <div>
             <p>検索したいキーワードを入力してください</p>
@@ -56,30 +94,43 @@
     </div>
   </div>
 
-  <footer class="bg-indigo">
-    
-      <div class="row">
+  <footer class="bg-brown">
+    <div class="container">
+      <div class="row pt-5">
 
-        <div class="col-md-4">
-          <button class="border-0 w-100 h-100 bg-indigo rounded-0" @click="$router.push('/')"><img class="w-75 d-block mx-auto" src="../../image/logo_triming.png"></button>
+        <div class="col-md-3 d-flex align-items-center border-right my">
+            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/tiku')">地区</button>
+        </div>
+        <!-- <div class="w-res col-0"></div> -->
+        <div class="col-md-3 d-flex align-items-center border-right my">
+            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/Category')">カテゴリ</button>
+        </div>
+        <div class="col-md-3 d-flex align-items-center border-right my">
+            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/osusume')">おすすめ</button>
+        </div>
+        <div class="col-md-3 d-flex align-items-center my">
+            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/pages/list/1')">記事一覧</button>
         </div>
 
-        <div class="col-md-2 d-flex align-items-center">
-            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/tiku')">地区</button>
-        </div>
-        <div class="col-md-2 d-flex align-items-center">
-            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/Category')">カテゴリ</button>
-        </div>
-        <div class="col-md-2 d-flex align-items-center">
-            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/osusume')">おすすめ</button>
+        <div class="col-md-2">
         </div>
 
-        <div class="col-md-2 d-flex align-items-center">
-            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-indigo text-white mb-0" @click="$router.push('/pages/list/1')">記事一覧</button>
+        <div class="col-2">
         </div>
+
+        <div class="col-md-4 col-8 text-center">
+          <img class="w-50" src="../../image/logo.png">
+        </div>
+
+        <div class="col-md-2">
+        </div>
+
+        <div class="col-2">
+        </div>
+        
 
       </div>
-    
+    </div>
     <hr />
   </footer>
 
