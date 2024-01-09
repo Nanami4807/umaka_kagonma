@@ -58,6 +58,7 @@
     </div>
 
   <div class="background">
+    <img class="w-100" src="../../image/header.png">
     <div class="container">
       <div class="row">
         <div class="col-md-2 col-sm-1"></div>
@@ -72,7 +73,7 @@
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
-              <nuxt-link :to="`/${content.id}`">{{ content.title }}<br>
+              <nuxt-link :to="`/${content.id}`" class="text-white">{{ content.title }}<br>
               <img class="radius-img w-75" :src="content.eyecatch.url"></nuxt-link>
             </li>
           </ul>
@@ -131,7 +132,6 @@
 
       </div>
     </div>
-    <hr />
   </footer>
 
 </div>
@@ -156,24 +156,30 @@ export default {
   methods:{
     search(){
       let s_value = this.searchText
+      //URIエンコード
       s_value = encodeURIComponent(s_value)
+      //検索実行
       this.$router.push(`/search?id=${s_value}`);
     }
   },
-
+  //urlの値を取得
   async asyncData({ params }) {
+    //params.pがなければ1を代入する
     const page = params.p || '1'
     const categoryId = params.categoryId
     const tikuId = params.tikuId 
+    //1ページあたりに表示する店の数
     const limit = 10    
-
+    //カテゴリ指定があった場合
     if(categoryId != null){
       var { data } = await axios.get(
+        //=== ←型変換することなく厳密に等しい
         `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
         {
           headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
         }
       );
+    //地区指定があった場合
     }else{
       var { data } = await axios.get(
         `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${tikuId === undefined ? '' : `&filters=tiku[equals]${tikuId}`}&offset=${(page - 1) * limit}`,

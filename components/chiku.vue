@@ -24,10 +24,10 @@
                 <div class="align-items-center">
                     <img class="w-75" src="../image/line.png">
                     <NuxtLink to="/tiku/tyu-ou/pages/list/1">
-                        <img class="w-50 p_tiku_text" src="../image/tiku_tyuou.png">
+                        <img class="w-50 hov p_tiku_text" src="../image/tiku_tyuou.png">
                     </NuxtLink>
                     <img class="w-75" src="../image/line.png">
-                    <NuxtLink to="/tiku/taniyama/pages/list/1">
+                    <NuxtLink to="/tiku/taniyama/pages/list/1" class="hov">
                         <img class="w-50 p_tiku_text" src="../image/tiku_taniyama.png">
                     </NuxtLink>
                     <img class="w-75" src="../image/line.png">

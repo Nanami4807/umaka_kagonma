@@ -69,6 +69,7 @@
 
 
     <div class="background">
+      <img class="w-100" src="../../image/header.png">
       <div class="container">
         <div class="p-3">
           <h1 class="title">{{ title }}</h1>
@@ -120,7 +121,6 @@
 
         </div>
       </div>
-      <hr />
   </footer>
 
 

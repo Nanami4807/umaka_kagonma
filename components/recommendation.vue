@@ -1,5 +1,6 @@
 <template>
     <div class="background">
+        <img class="w-100" src="../image/header.png">
         <div class="container text-center">
             <h1>いっぱい食べたい人におすすめ！</h1>
 

@@ -13,6 +13,9 @@ button{
     width: 150px;
     border-radius: 24px;
 }
+li a{
+  color:black;
+}
 a{
   color:white;
 }
@@ -77,6 +80,10 @@ h1:before, h1:after {
   border-bottom: solid 1px black;
 }
 
+.vh-100{
+  height:100vh;
+}
+
 h1:before {
   left:0;
 }
@@ -101,9 +108,10 @@ h1:after {
 
 .hov:hover{
   opacity:0.5;
-	transition:0.3s;
+	transition:0.02s;
 }
 
+/*アスペクト比*/
 .asp16-9{
   aspect-ratio: 16/9;
 }
@@ -112,6 +120,7 @@ h1:after {
   border-right: solid 2px #9c7c29;
 }
 
+/*y軸方向にマージン*/
 .my{
   margin:1em 0;
 }
@@ -134,20 +143,26 @@ h1:after {
 }
 /* メディアクエリ */
 @media (max-width: 768px) {
-.border-right{
-  border-bottom: dashed 2px #9c7c29;
-  border-right:none;
-}
-#pc{
-  display:none;
-}
-#iphone{
-  display:block;
-}
+  .border-right{
+    border-bottom: dashed 2px #9c7c29;
+    border-right:none;
+  }
+  #pc{
+    display:none;
+  }
+  #iphone{
+    display:block;
+  }
 
-.my{
-  padding-bottom:1em;
-}
+  .my{
+    padding-bottom:1em;
+  }
+
+  .background_home{
+    width:100%;
+    background-image: url("image/background_home_iphone.png");
+    background-size:cover;
+  }
 }
 @media (max-width: 575px){
   .home_text_res{
@@ -164,6 +179,11 @@ h1:after {
   }
   .home_img_m{
     margin-top:0;
+  }
+  .background_home{
+    width:100%;
+    background-image: url("image/background_home_iphone_small.png");
+    background-size:cover;
   }
 }
 

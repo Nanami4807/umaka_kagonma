@@ -28,9 +28,10 @@ export default {
   },
 
   router: {
+    //ルーティング
     extendRoutes(routes, resolve) {
       routes.push({
-        path: '/pages/list/:p',               //url(localhost:3000/pages/list/:p)
+        path: '/pages/list/:p',               
         component: resolve(__dirname, 'pages/list/list.vue'),
         name: 'page',
       });

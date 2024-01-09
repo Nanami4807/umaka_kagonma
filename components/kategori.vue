@@ -1,5 +1,6 @@
 <template>
     <div class="background">
+        <img class="w-100" src="../image/header.png">
         <div class="text-center">
             <h1>カテゴリ</h1>
             <div class="rgb-gray">
