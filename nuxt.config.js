@@ -51,6 +51,7 @@ export default {
     },
   },
 
+  //静的生成対応
   generate: {
     async routes() {
       const axios = require('axios')

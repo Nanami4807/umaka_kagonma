@@ -203,6 +203,8 @@ export default {
         headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' },
       }
     );
+
+    //categoryIdがあるかどうか
     const selectedCategory =
       categoryId !== undefined
         ? categories.data.contents.find((content) => content.id === categoryId)
