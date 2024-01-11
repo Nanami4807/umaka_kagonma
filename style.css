@@ -1,7 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Old+Mincho:wght@600&display=swap');
 
-  @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&family=Zen+Old+Mincho:wght@600&display=swap');
 
-/*test*/
 
 *{
   font-family: 'Zen Old Mincho', serif;
@@ -27,10 +26,18 @@ ul{
     background-image: url("image/background_home.png");
     background-size:cover;
 }
+.background_home > div{
+  max-width:1000px;
+}
 .background{
   width:100%;
-  background-image: url("image/background.png");
+  background-color:#4d3831;
+  /*background-image: url("image/background.png");*/
   background-size:cover;
+}
+.background > div {
+  max-width:1000px;
+  margin:auto;
 }
 .rgb-gray{
     background-color: rgba(0,0,0,0.3);

@@ -5,7 +5,7 @@
                 <img class="w-100" src="../image/home.png">
             
                 
-                <div class="text-center">
+                <div class="text-center m-auto">
                     
                     <img id="pc_s" class="w-100" src="../image/top_text.png">
                     <img id="iphone_s" class="w-100 d-no home_toptext_res" src="../image/top_text_triming.png">
