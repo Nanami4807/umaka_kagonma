@@ -46,11 +46,11 @@
                 </div>
             </div>
 
-            <div class="col-2 col-md-2">
+            <div class="col-3 col-md-2">
                 <img class="w-75" src="../image/corner_leftdown.png">
             </div>
-            <div class="col-8 col-md-8"></div>
-            <div class="col-2 col-md-2">
+            <div class="col-6 col-md-8"></div>
+            <div class="col-3 col-md-2">
                 <img class="w-75" src="../image/corner_rightdown.png">
             </div>
         </div>

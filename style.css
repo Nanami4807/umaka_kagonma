@@ -189,7 +189,8 @@ h1:after {
   }
   .background_home{
     width:100%;
-    background-image: url("image/background_home_iphone_small.png");
+    background-color:#4d3831;
+    background-image:none;
     background-size:cover;
   }
 }

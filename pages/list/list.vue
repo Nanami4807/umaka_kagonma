@@ -73,7 +73,7 @@
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
-              <nuxt-link :to="`/${content.id}`" class="text-white">{{ content.title }}<br>
+              <nuxt-link :to="`/${content.id}`" class="text-white text-decoration-none">{{ content.title }}<br>
               <img class="radius-img w-75" :src="content.eyecatch.url"></nuxt-link>
             </li>
           </ul>
