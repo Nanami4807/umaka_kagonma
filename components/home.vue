@@ -2,8 +2,8 @@
     <div>
 
             <div class="background_home">
-                <img class="w-100" src="../image/home.png">
-            
+                <img class="w-100 home" src="../image/home.png">
+                <img class="w-100 home_small d-no" src="../image/home_small.png">
                 
                 <div class="text-center m-auto">
                     
