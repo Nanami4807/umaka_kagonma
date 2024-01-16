@@ -1,7 +1,7 @@
 <template>
 <div class="background">
     <img class="w-100" src="../image/header.png">
-    <div class="mt-5 container animate__animated animate__fadeIn">
+    <div class="py-5 container animate__animated animate__fadeIn">
         <div class="row text-center">
             <div class="col-3 col-md-2">
                 <img class="w-75" src="../image/corner_leftup.png">
@@ -10,11 +10,9 @@
             <div class="col-3 col-md-2">
                 <img class="w-75" src="../image/corner_rightup.png">
             </div>
-            <div class="col-3"></div>
-            <div class="col-6">
-                <img class="w-100" src="../image/tiku_top.png">
+            <div class="col-12">
+                <h1 class="text-whitesmoke">地区から探す</h1>
             </div>
-            <div class="col-3"></div>
             
             <div class="col-md-6 mt-5">
                 <img class="w-100 mb-5 px-5" src="../image/tiku_tizu.png" usemap="#ImageMap" alt="地図"/>
@@ -31,16 +29,16 @@
             <div class="col-md-6 my-auto">
                 <div class="align-items-center">
                     <img class="w-75" src="../image/line.png">
-                    <NuxtLink to="/tiku/tyu-ou/pages/list/1">
-                        <img class="w-50 hov p_tiku_text" src="../image/tiku_tyuou.png">
+                    <NuxtLink to="/tiku/tyu-ou/pages/list/1" class="text-decoration-none">
+                        <h2 class="w-100 hov p_tiku_text text-whitesmoke">中央地区</h2>
                     </NuxtLink>
                     <img class="w-75" src="../image/line.png">
-                    <NuxtLink to="/tiku/taniyama/pages/list/1">
-                        <img class="w-50 p_tiku_text hov" src="../image/tiku_taniyama.png">
+                    <NuxtLink to="/tiku/taniyama/pages/list/1" class="text-decoration-none">
+                        <h2 class="w-100 hov p_tiku_text text-whitesmoke">谷山地区</h2>
                     </NuxtLink>
                     <img class="w-75" src="../image/line.png">
-                    <NuxtLink to="/tiku/matumoto/pages/list/1">
-                        <img class="w-50 p_tiku_text hov" src="../image/tiku_matumoto.png">
+                    <NuxtLink to="/tiku/matumoto/pages/list/1" class="text-decoration-none">
+                        <h2 class="w-100 hov p_tiku_text text-whitesmoke">松元地区</h2>
                     </NuxtLink>
                     <img class="w-75" src="../image/line.png">
                 </div>
@@ -54,8 +52,6 @@
                 <img class="w-75" src="../image/corner_rightdown.png">
             </div>
         </div>
-    </div>
-    <div style="height:150px;">
     </div>
 </div>
 </template>

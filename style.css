@@ -21,10 +21,13 @@ a{
 ul{
   list-style: none;
 }
+.text-whitesmoke{
+  color:#f5f5d9;
+}
 .background_home{
-    width:100%;
-    background-image: url("image/background_home.png");
-    background-size:cover;
+  width:100%;
+  background-image: url("image/background_home.png");
+  background-size:cover;
 }
 .background_home > div{
   max-width:1000px;
@@ -32,7 +35,6 @@ ul{
 .background{
   width:100%;
   background-color:#4d3831;
-  /*background-image: url("image/background.png");*/
   background-size:cover;
 }
 .background > div {
@@ -40,13 +42,13 @@ ul{
   margin:auto;
 }
 .rgb-gray{
-    background-color: rgba(0,0,0,0.3);
-    width:75%;
-    margin:0 auto;
-    border-radius: 10px;
+  background-color: rgba(0,0,0,0.3);
+  width:75%;
+  margin:0 auto;
+  border-radius: 10px;
 }
 .radius-img{
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .pager{
@@ -56,18 +58,21 @@ ul{
 
 
 .page .nuxt-link-exact-active{
-  background-color: #2589d0;
-  color:white;
+  background-color: #9c7c29;
+  color:#f5f5d9;
 }
 
 .page a{
   text-decoration: none;
-  background-color: white;
+  background-color: #f5f5d9;
   border-radius: 5px;
   padding :5px 10px;
   margin: 5px 10px;
 }
-
+/*フォームの装飾*/
+.form-wrap{
+  /* background-color:#9c7c29; */
+}
 /*見出しの装飾*/
 h1 {
   position: relative;
@@ -83,22 +88,23 @@ h1:before, h1:after {
   display: inline-block;
   width: 45px;
   height: 2px;
-  border-top: solid 1px black;
-  border-bottom: solid 1px black;
+  border-top: solid 1px #f5f5d9;
+  border-bottom: solid 1px #f5f5d9;
 }
-
-.vh-100{
-  height:100vh;
-}
-
 h1:before {
   left:0;
 }
 h1:after {
   right: 0;
 }
-
-
+.btn{
+  color:#f5f5d9;
+  background-color:#9c7c29;
+}
+/*高さを画面幅いっぱいとる*/
+.vh-100{
+  height:100vh;
+}
 .bg-brown{
   background-color: #35221E;
 }
@@ -139,14 +145,16 @@ h1:after {
 .d-no{
   display: none;
 }
-.home_text_m{
-  margin-top:3em;
-}
 .home_img_m{
   margin-top:3em;
 }
 .p_tiku_text{
   padding:0.5em 3em;
+  margin:0;
+}
+.f-item-wrap{
+  padding-top:3em;
+  width:80%;
 }
 /* メディアクエリ */
 @media (max-width: 768px) {
@@ -169,12 +177,15 @@ h1:after {
   }
   .my{
     padding-bottom:1em;
+    margin-bottom:0;
   }
-
   .background_home{
     width:100%;
     background-image: url("image/background_home_iphone.png");
     background-size:cover;
+  }
+  .f-item-wrap{
+    padding-top:0;
   }
 }
 @media (max-width: 575px){
@@ -201,7 +212,7 @@ h1:after {
   }
 }
 
-
+/* ここから下がハンバーガーメニューに関するCSS */
 
 /* ハンバーガーメニュー */
 .header {
@@ -214,7 +225,7 @@ h1:after {
 
  
 
-/* ここから下がハンバーガーメニューに関するCSS */
+
   
 /* チェックボックスを非表示にする */
 .drawer_hidden {

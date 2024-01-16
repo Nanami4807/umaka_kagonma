@@ -1,18 +1,18 @@
 <template>
   <footer class="bg-brown">
     <div class="container">
-      <div class="row pt-5">
+      <div class="row m-auto f-item-wrap">
         <div class="col-md-3 d-flex align-items-center border-right my">
-            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/tiku')">地区</button>
+            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-whitesmoke mb-0" @click="$router.push('/tiku')">地区</button>
         </div>
         <div class="col-md-3 d-flex align-items-center border-right my">
-            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/Category')">カテゴリ</button>
+            <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-whitesmoke mb-0" @click="$router.push('/Category')">カテゴリ</button>
         </div>
         <div class="col-md-3 d-flex align-items-center border-right my">
-            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/osusume')">おすすめ</button>
+            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-brown text-whitesmoke mb-0" @click="$router.push('/osusume')">おすすめ</button>
         </div>
         <div class="col-md-3 d-flex align-items-center my">
-            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-brown text-white mb-0" @click="$router.push('/pages/list/1')">記事一覧</button>
+            <button type="button" class="border-0 w-100 h-100 h-100 h4 rounded-0 bg-brown text-whitesmoke mb-0" @click="$router.push('/pages/list/1')">記事一覧</button>
         </div>
         <div class="col-md-2">
         </div>
