@@ -70,8 +70,13 @@ ul{
   margin: 5px 10px;
 }
 /*フォームの装飾*/
-.form-wrap{
-  /* background-color:#9c7c29; */
+.flex-1{
+  flex:1;
+}
+.form_submit{
+  color: #f5f5d9;
+  border: #9c7c29 1px;
+  background: #9c7c29;
 }
 /*見出しの装飾*/
 h1 {

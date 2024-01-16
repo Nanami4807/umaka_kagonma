@@ -1,11 +1,19 @@
 <template>
     <div class="background">
         <img class="w-100" src="../image/header.png">
-        <div class="container text-center text-whitesmoke">
-            <h1>いっぱい食べたい人におすすめ！</h1>
+        <div class="container text-center text-whitesmoke py-5">
 
 
             <div class="row">
+                <div class="col-3 col-md-2">
+                    <img class="w-75" src="../image/corner_leftup.png">
+                </div>
+                <div class="col-6 col-md-8"></div>
+                <div class="col-3 col-md-2">
+                    <img class="w-75" src="../image/corner_rightup.png">
+                </div>
+
+                <div class="col-12"><h1>いっぱい食べたい人におすすめ！</h1></div>
                 <div class="col-md-6 my-auto">
                     <h2>肉と海鮮グリル パスタン</h2>
                     <p>名前の通り肉と海鮮がとてもおいしい店でボリュームも満点！！！</p>
@@ -182,7 +190,16 @@
                     <button type="button" class="btn  mb-5" @click="$router.push('/wa4952ntssw4')">もっと見る</button>
                 </div>
 
+                <div class="col-3 col-md-2">
+                    <img class="w-75" src="../image/corner_leftdown.png">
+                </div>
+                <div class="col-6 col-md-8"></div>
+                <div class="col-3 col-md-2">
+                    <img class="w-75" src="../image/corner_rightdown.png">
+                </div>
             </div>
+
+            
         </div>
     </div>
 </template>
