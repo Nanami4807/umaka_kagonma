@@ -4,8 +4,15 @@
   <Header />
   <div class="background text-whitesmoke">
     <img class="w-100" src="../image/header.png">
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../image/corner_leftup.png">
+        </div>
+        <div class="col-6 col-md-8"></div>
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../image/corner_rightup.png">
+        </div>
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8 col-sm-10 text-center text-whitesmoke">
           <h1>検索</h1>
@@ -18,6 +25,13 @@
           </ul>
         </div>
         <div class="col-md-2 col-sm-1"></div>
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../image/corner_leftdown.png">
+        </div>
+        <div class="col-6 col-md-8"></div>
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../image/corner_rightdown.png">
+        </div>
       </div>      
     </div>
   </div>

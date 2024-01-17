@@ -17,26 +17,26 @@
                     <NuxtLink to ="/category/noodles/pages/list/1">
                         <img class="w-75 radius-img hov" src="../image/menrui.jpg">
                     </NuxtLink>
-                    <h1>麺類</h1>
+                    <h2>麺類</h2>
                 </div>
                 <div class="col-md-6 mt-5">
                     <NuxtLink to ="/category/don/pages/list/1">
                         <img class="w-75 radius-img hov" src="../image/donmono.jpg">
                     </NuxtLink>
-                    <h1>丼もの</h1>
+                    <h2>丼もの</h2>
                 </div>
 
                 <div class="col-md-6 mt-5">
                     <NuxtLink to ="/category/sweets/pages/list/1">
                         <img class="w-75 radius-img hov" src="../image/sui-tu.jpg">
                     </NuxtLink>
-                    <h1>スイーツ</h1>
+                    <h2>スイーツ</h2>
                 </div>
                 <div class="col-md-6 mt-5">
                     <NuxtLink to ="/category/other/pages/list/1">
                         <img class="w-75 radius-img hov" src="../image/sonota.jpg">
                     </NuxtLink>
-                    <h1>その他</h1>
+                    <h2>その他</h2>
                 </div>
 
                 <div class="col-3 col-md-2">

@@ -6,8 +6,13 @@
         width:75%;
         height:75%;
         border-radius: 10px;
+      }
+      figure{
         text-align:center;
-              }
+      }
+      h2{
+        margin-bottom:1em;
+      }
     </style>
 
     <div id="pc">
@@ -85,7 +90,9 @@
             <div class="text-center">
               <div class="text-start d-inline-block">
                 <div class="p-3">
-                  <h1 class="title">{{ title }}</h1>
+                  <div class="text-center">
+                    <h1 class="title">{{ title }}</h1>
+                  </div>
                   <p class="category">{{ category && category.name }}</p>
                   <p class="tiku">{{ tiku && tiku.name }}</p>
                   <div v-html="content"></div>
