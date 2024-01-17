@@ -6,6 +6,7 @@
         width:75%;
         height:75%;
         border-radius: 10px;
+        text-align:center;
               }
     </style>
 
@@ -68,14 +69,38 @@
 
 
 
-    <div class="background">
+    <div class="background text-whitesmoke">
       <img class="w-100" src="../../image/header.png">
-      <div class="container">
-        <div class="p-3">
-          <h1 class="title">{{ title }}</h1>
-          <p class="category">{{ category && category.name }}</p>
-          <p class="tiku">{{ tiku && tiku.name }}</p>
-          <div v-html="content"></div>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-3 col-md-2">
+            <img class="w-75" src="../../image/corner_leftup.png">
+          </div>
+          <div class="col-6 col-md-8"></div>
+          <div class="col-3 col-md-2">
+              <img class="w-75" src="../../image/corner_rightup.png">
+          </div>
+          <div class="col-md-2 col-sm-1"></div>
+          <div class="col-md-8 col-sm-10">
+            <div class="text-center">
+              <div class="text-start d-inline-block">
+                <div class="p-3">
+                  <h1 class="title">{{ title }}</h1>
+                  <p class="category">{{ category && category.name }}</p>
+                  <p class="tiku">{{ tiku && tiku.name }}</p>
+                  <div v-html="content"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 col-sm-1"></div>
+          <div class="col-3 col-md-2">
+            <img class="w-75" src="../../image/corner_leftdown.png">
+          </div>
+          <div class="col-6 col-md-8"></div>
+          <div class="col-3 col-md-2">
+              <img class="w-75" src="../../image/corner_rightdown.png">
+          </div>
         </div>
       </div>
     </div>

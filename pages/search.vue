@@ -2,13 +2,24 @@
 <template>
 <div>
   <Header />
-  <div class="background">
+  <div class="background text-whitesmoke">
     <img class="w-100" src="../image/header.png">
-    <ul class="my-0">
-      <li v-for="content in contents" :key="content.id">
-        <nuxt-link :to="`/${content.id}`">{{ content.title }}</nuxt-link>
-      </li>
-    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-sm-1"></div>
+        <div class="col-md-8 col-sm-10 text-center text-whitesmoke">
+          <h1>検索</h1>
+          <p>{{'検索ワード:' + text}}</p>
+          <ul class="my-0">
+            <li class="pb-4" v-for="content in contents" :key="content.id">
+              <nuxt-link :to="`/${content.id}`" class="text-whitesmoke text-decoration-none">{{ content.title }}<br>
+              <img class="radius-img w-75" :src="content.eyecatch.url"></nuxt-link>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2 col-sm-1"></div>
+      </div>      
+    </div>
   </div>
   
   <Footer />
@@ -34,7 +45,10 @@ export default {
       `https://umaka.microcms.io/api/v1/blogs/?q=${text}`,
       { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
     )
-    return data
+    return {
+      ...data,
+      text,
+    };
   }
 }
 

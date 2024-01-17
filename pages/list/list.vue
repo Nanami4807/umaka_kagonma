@@ -59,15 +59,22 @@
 
   <div class="background">
     <img class="w-100" src="../../image/header.png">
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../../image/corner_leftup.png">
+        </div>
+        <div class="col-6 col-md-8"></div>
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../../image/corner_rightup.png">
+        </div>
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8 col-sm-10 text-center text-whitesmoke">
           <h1>お店一覧</h1>
           <p>検索したいキーワードを入力してください</p>
           <div>
             <input id="search_text" type="search" name="search" placeholder="キーワードを入力" v-model="searchText" class="flex-1"><!--
-            --><button id="search_btn" type="button" name="submit" @click="search" class="form_submit rounded-0">検索</button>
+            --><button id="search_btn" type="button" name="submit" @click="search" class="form_submit rounded-0 w-auto"><i class="bi bi-search"></i>検索</button>
           </div>
           <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
@@ -91,6 +98,13 @@
           </div>
         </div>
         <div class="col-md-2 col-sm-1"></div>
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../../image/corner_leftdown.png">
+        </div>
+        <div class="col-6 col-md-8"></div>
+        <div class="col-3 col-md-2">
+            <img class="w-75" src="../../image/corner_rightdown.png">
+        </div>
       </div>
     </div>
   </div>
@@ -102,7 +116,6 @@
         <div class="col-md-3 d-flex align-items-center border-right my">
             <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-whitesmoke mb-0" @click="$router.push('/tiku')">地区</button>
         </div>
-        <!-- <div class="w-res col-0"></div> -->
         <div class="col-md-3 d-flex align-items-center border-right my">
             <button type="button" class="border-0 w-100  h-100 h-100 h4 rounded-0 bg-brown text-whitesmoke mb-0" @click="$router.push('/Category')">カテゴリ</button>
         </div>
@@ -143,7 +156,6 @@
 import Header from '../../components/header.vue';
 import Footer from '../../components/footer.vue';
 import axios from 'axios';
-//import func from 'vue-editor-bridge';
 
 export default {
   data() {
