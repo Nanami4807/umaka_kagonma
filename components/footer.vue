@@ -19,7 +19,9 @@
         <div class="col-2">
         </div>
         <div class="col-md-4 col-8 text-center">
-          <img class="w-50" src="../image/logo.png">
+          <NuxtLink to="/">
+            <img class="w-50" src="../image/logo.png">
+          </NuxtLink>
         </div>
         <div class="col-md-2">
         </div>

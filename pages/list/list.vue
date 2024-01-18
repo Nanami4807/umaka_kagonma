@@ -81,7 +81,7 @@
           <ul>
             <li class="pb-4" v-for="content in contents" :key="content.id">
               <nuxt-link :to="`/${content.id}`" class="text-whitesmoke text-decoration-none">{{ content.title }}<br>
-              <img class="radius-img w-75" :src="content.eyecatch.url"></nuxt-link>
+              <img class="radius-img w-75" :src="content.eyecatch.url"><!--eyecatchが設定されていなくても代わりの画像が出てくるようにしたい--></nuxt-link>
             </li>
           </ul>
           <div class="row">
@@ -185,7 +185,7 @@ export default {
     //カテゴリ指定があった場合
     if(categoryId != null){
       var { data } = await axios.get(
-        //=== ←型変換することなく厳密に等しい
+        //=== ←型変換することなく厳密に等しい                           ↓もし～なら             ↓こうする       ↓そうでなければこうする         
         `https://umaka.microcms.io/api/v1/blogs/?limit=${limit}${categoryId === undefined ? '' : `&filters=category[equals]${categoryId}`}&offset=${(page - 1) * limit}`,
         {
           headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' }
