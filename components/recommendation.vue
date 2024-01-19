@@ -1,5 +1,10 @@
 <template>
     <div class="background">
+        <style>
+            .row .col-md-6{
+                padding:0;
+            }
+        </style>
         <img class="w-100" src="../image/header.png">
         <div class="container text-center text-whitesmoke py-5">
 

@@ -10,6 +10,8 @@
             <div class="col-3 col-md-2">
                 <img class="w-75" src="../image/corner_rightup.png">
             </div>
+        </div>
+        <div class="row upper">
             <div class="col-12">
                 <h1 class="text-whitesmoke">地区から探す</h1>
             </div>
@@ -23,7 +25,6 @@
                 </map>
             </div>
 
-            <script src="https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
             <script>imageMapResize();</script>
 
             <div class="col-md-6 my-auto">

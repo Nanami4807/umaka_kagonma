@@ -16,7 +16,8 @@ export default {
     ],
     script: [
       {src: 'https://unpkg.com/aos@next/dist/aos.js'},
-      {src: 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js'}
+      {src: 'https://cdnjs.cloudflare.com/ajax/libs/picturefill/3.0.3/picturefill.min.js'},
+      {src: 'https://unpkg.com/image-map-resizer@1.0.10/js/imageMapResizer.min.js'}
       
     ],
     link: [

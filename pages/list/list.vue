@@ -71,10 +71,12 @@
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8 col-sm-10 text-center text-whitesmoke">
           <h1>お店一覧</h1>
-          <p>検索したいキーワードを入力してください</p>
-          <div>
-            <input id="search_text" type="search" name="search" placeholder="キーワードを入力" v-model="searchText" class="flex-1"><!--
-            --><button id="search_btn" type="button" name="submit" @click="search" class="form_submit rounded-0 w-auto"><i class="bi bi-search"></i>検索</button>
+          <div class="my-2">
+            <p class="mb-0">検索したいキーワードを入力してください</p>
+            <div>
+              <input id="search_text" type="search" name="search" placeholder="キーワードを入力" v-model="searchText" class="flex-1"><!--
+              --><button id="search_btn" type="button" name="submit" @click="search" class="form_submit rounded-0 w-auto"><i class="bi bi-search"></i>検索</button>
+            </div>
           </div>
           <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
