@@ -12,7 +12,7 @@
             </div>
         </div>
         <div class="row upper">
-            <div class="col-12">
+            <div class="col-12 text-center">
                 <h1 class="text-whitesmoke">地区から探す</h1>
             </div>
             

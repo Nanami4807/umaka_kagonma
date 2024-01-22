@@ -68,6 +68,8 @@
         <div class="col-3 col-md-2">
             <img class="w-75" src="../../image/corner_rightup.png">
         </div>
+      </div>
+      <div class="row upper">
         <div class="col-md-2 col-sm-1"></div>
         <div class="col-md-8 col-sm-10 text-center text-whitesmoke">
           <h1>お店一覧</h1>
