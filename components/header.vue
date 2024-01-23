@@ -20,7 +20,7 @@
                                 <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-whitesmoke " @click="$router.push('/osusume')">おすすめ</button>
                             </div>
                             <div class="col-3 d-flex align-items-center my-4 ">
-                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-whitesmoke" @click="$router.push('pages/list/1')">記事一覧</button>
+                                <button type="button" class="border-0 w-100 bg-brown h-100 h4  text-whitesmoke" @click="$router.push('/pages/list/1')">記事一覧</button>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@
                             <li class="nav_item"><NuxtLink to="/tiku">地区</NuxtLink></li>
                             <li class="nav_item"><NuxtLink to="/Category">カテゴリ</NuxtLink></li>
                         <li class="nav_item"><NuxtLink to="/osusume">オススメ</NuxtLink></li>
-                    <li class="nav_item"><NuxtLink to="pages/list/1">記事一覧</NuxtLink></li>
+                    <li class="nav_item"><NuxtLink to="/pages/list/1">記事一覧</NuxtLink></li>
                     </ul>
                     </nav>
     

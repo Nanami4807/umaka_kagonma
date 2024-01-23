@@ -28,7 +28,7 @@
             <script>imageMapResize();</script>
 
             <div class="col-md-6 my-auto">
-                <div class="align-items-center">
+                <div class="align-items-center text-center">
                     <img class="w-75" src="../image/line.png">
                     <NuxtLink to="/tiku/tyu-ou/pages/list/1" class="text-decoration-none">
                         <h2 class="w-100 hov p_tiku_text text-whitesmoke">中央地区</h2>
