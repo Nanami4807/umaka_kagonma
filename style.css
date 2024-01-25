@@ -104,9 +104,22 @@ h1:before {
 h1:after {
   right: 0;
 }
-.btn{
+/*ボタン装飾*/
+.btn-outline-gold:hover{
+  background-color:#9c7c29;
+  color:#212529;
+}
+.btn-outline-gold{
+  border-color:#9c7c29;
+  color:#f5f5d9;
+}
+.btn-gold{
   color:#f5f5d9;
   background-color:#9c7c29;
+}
+.border-gold{
+  border-top:dashed #9c7c29;
+  border-bottom:dashed #9c7c29;
 }
 /*高さを画面幅いっぱいとる*/
 .vh-100{

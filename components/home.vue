@@ -18,7 +18,7 @@
                             <div data-aos="fade-up" class="col-sm-4 align-self-center mt-5 mb-3">
                                 <h2 class="mb-3">地区から探す</h2>
                                 <p>地域ごとの特色あるグルメ<br>地元の味をぜひお探しください</p>
-                                <button type="button" class="btn" @click="$router.push('/tiku')"><i class="bi bi-caret-right-fill small"></i>&nbsp;地区</button>
+                                <button type="button" class="btn btn-gold" @click="$router.push('/tiku')"><i class="bi bi-caret-right-fill small"></i>&nbsp;地区</button>
                             </div>
                             <div data-aos="fade-up" class="col-sm-4 d-flex home_img_m">
                                 <NuxtLink class="text-decoration-none text-whitesmoke" to="/tiku">
@@ -33,7 +33,7 @@
                             <div data-aos="fade-up" class="col-sm-4 align-self-center mt-5 mb-3">
                                 <h2 class="mb-3">カテゴリから探す</h2>
                                 <p>丼 スイーツ etc...<br>お好みのジャンルはこちらから</p>
-                                <button type="button" class="btn" @click="$router.push('/Category')"><i class="bi bi-caret-right-fill small"></i>&nbsp;カテゴリ</button>
+                                <button type="button" class="btn btn-gold" @click="$router.push('/Category')"><i class="bi bi-caret-right-fill small"></i>&nbsp;カテゴリ</button>
                             </div>
                             <div data-aos="fade-up" class="col-sm-4 d-flex home_img_m">
                                 <NuxtLink class="w-100" to="/Category">
@@ -48,7 +48,7 @@
                             <div data-aos="fade-up" class="col-sm-4 align-self-center mt-5 mb-3">
                                 <h2 class="mb-3">おすすめ</h2>
                                 <p>地元のおすすめの飲食店を<br>厳選してご紹介</p>
-                                <button type="button" class="btn" @click="$router.push('/osusume')"><i class="bi bi-caret-right-fill small"></i>&nbsp;おすすめ</button>
+                                <button type="button" class="btn btn-gold" @click="$router.push('/osusume')"><i class="bi bi-caret-right-fill small"></i>&nbsp;おすすめ</button>
                             </div>
                             <div data-aos="fade-up" class="col-sm-4 d-flex home_img_m">
                                 <NuxtLink to="/osusume">

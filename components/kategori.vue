@@ -22,7 +22,7 @@
                     </NuxtLink>
                     <h2>麺類</h2>
                     <p>ラーメン、うどん、そば、パスタ...</p>
-                    <button type="button" class="btn" @click="$router.push('/category/noodles/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;麺類</button>
+                    <button type="button" class="btn btn-gold" @click="$router.push('/category/noodles/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;麺類</button>
                 </div>
                 <div class="col-md-3"></div>
 
@@ -34,7 +34,7 @@
                     </NuxtLink>
                     <h2>丼もの</h2>
                     <p>海鮮丼、鶏飯...</p>
-                    <button type="button" class="btn" @click="$router.push('/category/don/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;丼もの</button>
+                    <button type="button" class="btn btn-gold" @click="$router.push('/category/don/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;丼もの</button>
                 </div>
                 <div class="col-md-3"></div>
 
@@ -46,7 +46,7 @@
                     </NuxtLink>
                     <h2>スイーツ</h2>
                     <p>洋菓子、和菓子...</p>
-                    <button type="button" class="btn" @click="$router.push('/category/sweets/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;スイーツ</button>
+                    <button type="button" class="btn btn-gold" @click="$router.push('/category/sweets/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;スイーツ</button>
                 </div>
                 <div class="col-md-3"></div>
 
@@ -58,7 +58,7 @@
                     </NuxtLink>
                     <h2>その他</h2>
                     <p>定食、ジャンクフード、揚げ物、居酒屋...</p>
-                    <button type="button" class="btn" @click="$router.push('/category/other/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;その他</button>
+                    <button type="button" class="btn btn-gold" @click="$router.push('/category/other/pages/list/1')"><i class="bi bi-caret-right-fill small"></i>&nbsp;その他</button>
                 </div>
                 <div class="col-md-3"></div>
 

@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/8_th_t3thu')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/8_th_t3thu')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
                     
                     <div class="col-md-6 my-auto">
@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/1zmlom0lvf7')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/1zmlom0lvf7')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
 
                     <div class="col-md-6 my-auto">
@@ -78,7 +78,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn mb-5" @click="$router.push('/ug6gazwxj9y')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold mb-5" @click="$router.push('/ug6gazwxj9y')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
                 </div>
                 <div class="col-md-1"></div>
@@ -106,7 +106,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
 
 
@@ -126,7 +126,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/n62i7y8s-v')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/n62i7y8s-v')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
                     <div class="col-md-6 my-auto">
                         <h2>天文館フェスティバロ</h2>
@@ -144,7 +144,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/vmupmcm9g')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/vmupmcm9g')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
                     <div class="col-md-6 my-auto">
                         <h2>天文館むじゃき本店</h2>
@@ -162,7 +162,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/judku4zwf')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/judku4zwf')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
 
                     <div class="col-md-6 my-auto">
@@ -181,7 +181,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/y--28mjzj')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/y--28mjzj')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
 
                     <div class="col-md-6 my-auto">
@@ -200,7 +200,7 @@
                     </div>
 
                     <div class="col-12 text-center mt-3">
-                        <button type="button" class="btn  mb-5" @click="$router.push('/wa4952ntssw4')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
+                        <button type="button" class="btn btn-gold  mb-5" @click="$router.push('/wa4952ntssw4')"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
                     </div>
                 </div>
                 <div class="col-md-1"></div>

@@ -82,7 +82,22 @@
           </div>
           <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
-          <ul>
+          <div class="border-gold py-3 mb-5">
+            <div class="mb-3">
+              <p class="mb-1">カテゴリ一覧</p>
+              <nuxt-link to="/category/noodles/pages/list/1"><button class="category btn btn-outline-gold w-auto">麺類</button></nuxt-link>
+              <nuxt-link to="/category/don/pages/list/1"><button class="category btn btn-outline-gold w-auto">丼もの</button></nuxt-link>
+              <nuxt-link to="/category/sweets/pages/list/1"><button class="category btn btn-outline-gold w-auto">スイーツ</button></nuxt-link>
+              <nuxt-link to="/category/other/pages/list/1"><button class="category btn btn-outline-gold w-auto">その他</button></nuxt-link>
+            </div>
+            <div class="mb-2">
+              <p class="mb-1">地区一覧</p>
+              <nuxt-link to="/tiku/tyu-ou/pages/list/1"><button class="category btn btn-outline-gold w-auto">中央地区</button></nuxt-link>
+              <nuxt-link to="/tiku/taniyama/pages/list/1"><button class="category btn btn-outline-gold w-auto">谷山地区</button></nuxt-link>
+              <nuxt-link to="/tiku/matumoto/pages/list/1"><button class="category btn btn-outline-gold w-auto">松元地区</button></nuxt-link>
+            </div>
+          </div>
+          <ul class="p-0">
             <li class="pb-4" v-for="content in contents" :key="content.id">
               <nuxt-link :to="`/${content.id}`" class="text-whitesmoke text-decoration-none">{{ content.title }}<br>
               <img class="radius-img w-75 hov" :src="content.eyecatch.url"></nuxt-link>

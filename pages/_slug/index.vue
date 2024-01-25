@@ -93,8 +93,14 @@
                   <div class="text-center">
                     <h1 class="title">{{ title }}</h1>
                   </div>
-                  <p class="category">{{ category && category.name }}</p>
-                  <p class="tiku">{{ tiku && tiku.name }}</p>
+                  <div class="my-3">
+                    <nuxt-link :to="'/category/' + category.id + '/pages/list/1'">
+                      <button class="category btn btn-outline-gold w-auto">{{ category && category.name }}</button>
+                    </nuxt-link>
+                    <nuxt-link :to="'/tiku/' + tiku.id + '/pages/list/1'">
+                      <button class="tiku btn btn-outline-gold w-auto">{{ tiku && tiku.name }}</button>
+                    </nuxt-link>
+                  </div>
                   <div v-html="content"></div>
                 </div>
               </div>
