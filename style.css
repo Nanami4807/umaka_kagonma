@@ -136,6 +136,7 @@ h1:after {
   aspect-ratio: 16/9;
 }
 
+/*footer部分のborder*/
 .border-right{
   border-right: solid 2px #9c7c29;
 }
