@@ -100,7 +100,8 @@
           <ul class="p-0">
             <li class="pb-4" v-for="content in contents" :key="content.id">
               <nuxt-link :to="`/${content.id}`" class="text-whitesmoke text-decoration-none">{{ content.title }}<br>
-              <img class="radius-img w-75 hov" :src="content.eyecatch.url"></nuxt-link>
+              <img class="radius-img w-75 hov" :src="content.eyecatch.url"></nuxt-link><br>
+              <button type="button" class="btn btn-gold  mb-4 mt-2" @click="$router.push(`/${content.id}`)"><i class="bi bi-caret-right-fill small"></i>&nbsp;もっと見る</button>
             </li>
           </ul>
           <div class="row">

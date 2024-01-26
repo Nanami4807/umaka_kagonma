@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <ul class="pager">
+    <ul class="pager p-0">
       <li v-if="current > 1" class="page arrow">
         <nuxt-link :to="getPath(current - 1)">
           <img src="../image/chevron-left.svg" alt="前のページへ" />
@@ -44,6 +44,7 @@
 
 <script>
 export default {
+  //list.vueにデータを渡す
   props: {
     pager: {
       type: Array,
