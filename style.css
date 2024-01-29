@@ -145,8 +145,8 @@ h1:after {
 }
 
 /*アスペクト比*/
-.asp16-9{
-  aspect-ratio: 16/9;
+.asp1-1{
+  aspect-ratio: 1/1;
 }
 
 /*footer部分のborder*/
