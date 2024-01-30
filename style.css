@@ -104,6 +104,9 @@ h1:before {
 h1:after {
   right: 0;
 }
+.text-gold{
+  color:#9c7c29;
+}
 /*ボタン装飾*/
 .btn-outline-gold:hover{
   background-color:#9c7c29;

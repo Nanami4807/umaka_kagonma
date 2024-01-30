@@ -43,6 +43,7 @@
                                 営業時間：18時～23時<br>
                                 定休日：特になし<br>
                                 TEL：099－251－3929<br>
+                                サイトurl：<a class="text-gold" href="https://jabara.owst.jp/" target=”_blank”>https://jabara.owst.jp/</a>
                             </div>
                         </div>  
                     </div>
@@ -70,6 +71,7 @@
                                 営業時間：11時～15時　18時～21時（月曜日のみ15時まで）<br>
                                 定休日：火曜日<br>
                                 TEL：099－222－7586<br>
+                                サイトurl：<a class="text-gold" href="https://michi-no-cafe.owst.jp/" target=”_blank”>https://michi-no-cafe.owst.jp/</a>
                             </div>
                         </div>     
                     </div>
@@ -97,6 +99,7 @@
                                 営業時間：11時30分～15時　18時～23時<br>
                                 定休日：木曜日<br>
                                 TEL：099－801－4944<br>
+                                サイトurl：<a class="text-gold" href="https://www.passetemps.jp/" target=”_blank”>https://www.passetemps.jp/</a>
                             </div>
                         </div>
                     </div>
@@ -133,6 +136,7 @@
                                 営業時間：11時～18時<br>
                                 定休日：特になし<br>
                                 TEL：099－223－8526<br>
+                                サイトurl：<a class="text-gold" href="http://www.kanojonoie.jp/original5.html" target=”_blank”>http://www.kanojonoie.jp/original5.html</a>
                             </div>
                         </div>                                           
                     </div>
@@ -161,6 +165,7 @@
                                 営業時間：11時～18時<br>
                                 定休日：火曜日<br>
                                 TEL：099-248-8463<br>
+                                サイトurl：<a class="text-gold" href="https://matheruba.com/" target=”_blank”>https://matheruba.com/</a>
                             </div>
                         </div>
                     </div>
@@ -187,6 +192,7 @@
                                 営業時間：11時～18時<br>
                                 定休日：特になし<br>
                                 TEL：099-239-1333<br>
+                                サイトurl：<a class="text-gold" href="https://www.festivalo.co.jp/" target=”_blank”>https://www.festivalo.co.jp/</a>
                             </div>
                         </div>                   
                     </div>
@@ -213,6 +219,7 @@
                                 営業時間：11時～18時30分<br>
                                 定休日：特になし<br>
                                 TEL：099-222-6904<br>
+                                サイトurl：<a class="text-gold" href="https://mujyaki.co.jp/" target=”_blank”>https://mujyaki.co.jp/</a>
                             </div>
                         </div>                
                     </div>
@@ -240,6 +247,7 @@
                                 営業時間：9時～20時30分<br>
                                 定休日：特になし<br>
                                 TEL：099-295-0651<br>
+                                サイトurl：<a class="text-gold" href="https://andenken.jp/" target=”_blank”>https://andenken.jp/</a>
                             </div>
                         </div>        
                     </div>
@@ -267,6 +275,7 @@
                                 営業時間：9時～20時30分<br>
                                 定休日：特になし<br>
                                 TEL：099-254-0759<br>
+                                サイトurl：<a class="text-gold" href="https://www.abricot.biz/" target=”_blank”>https://www.abricot.biz/</a>
                             </div>
                         </div>  
                     </div>
