@@ -52,7 +52,7 @@
                     </div>
                     
                     <div class="col-md-6 p-4">
-                        <img class="asp1-1 w-100 px-auto " src="../ryouri_image/miticafe/miticafe-1.png">
+                        <img class="asp1-1 w-100 px-auto " src="../ryouri_image/miticafe/miticafe-1.jpg">
                     </div>
                     <div class="col-md-6 p-4">
                         <img class="asp1-1 w-100 px-auto " src="../ryouri_image/miticafe/miticafe-2.jpg">
