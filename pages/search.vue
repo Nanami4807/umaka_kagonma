@@ -58,7 +58,7 @@ export default {
     var text = query.id
     const { data } = await axios.get(
       //検索実行
-      `https://umaka.microcms.io/api/v1/blogs/?q=${text}`,
+      `https://umaka.microcms.io/api/v1/blogs/?q=${text}&limit=100`,
       { headers: { 'X-MICROCMS-API-KEY': 'bsKimZKgVvPzOdGgGUxIJTx3g7COGcmPI4yE' } }
     )
     return {

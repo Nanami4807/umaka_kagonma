@@ -58,7 +58,10 @@ a:hover{
 .upper{
   margin:-3em 0 0 0;
 }
-
+.nuxt-link-exact-active button{
+  background-color: #9c7c29;
+  color:#f5f5d9;  
+}
 .page .nuxt-link-exact-active{
   background-color: #9c7c29;
   color:#f5f5d9;
@@ -123,6 +126,9 @@ h1:after {
 .border-gold{
   border-top:dashed #9c7c29;
   border-bottom:dashed #9c7c29;
+}
+.red{
+  color: red;
 }
 /*高さを画面幅いっぱいとる*/
 .vh-100{

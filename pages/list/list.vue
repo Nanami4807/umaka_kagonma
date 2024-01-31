@@ -80,9 +80,6 @@
               --><button id="search_btn" type="button" name="submit" @click="search" class="form_submit rounded-0 w-auto"><i class="bi bi-search"></i>検索</button>
             </div>
           </div>
-          <style>
-            
-          </style>
           <p>{{ !!selectedCategory ? 'カテゴリ:' + selectedCategory.name  :'' }}</p>
           <p>{{ !!selectedtiku ? '地区:' + selectedtiku.name  :'' }}</p>
           <div class="border-gold py-3 mb-5">
@@ -169,7 +166,6 @@
 
 <script>
 
-
 import Header from '../../components/header.vue';
 import Footer from '../../components/footer.vue';
 import axios from 'axios';
@@ -177,6 +173,7 @@ import axios from 'axios';
 export default {
   data() {
     return {
+      isActive : "",
       searchText: '',
       searchResult: [],
     }
@@ -193,9 +190,7 @@ export default {
   },
   //urlの値を取得
   async asyncData({ params }) {
-    var arraycategory = new Array('noodles','don','sweets','other');
-    var arraytiku = new Array('tyu-ou','taniyama','matumoto');
-    console.log(arraycategory);
+
     //params.pがなければ1を代入する
     const page = params.p || '1'
     const categoryId = params.categoryId
